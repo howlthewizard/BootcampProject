@@ -1,8 +1,5 @@
 using GameDevTV.Utils;
-using AI.Attributes;
-using AI.Combat;
 using AI.AI;
-using AI.Movement;
 using System;
 using UnityEngine;
 
@@ -51,9 +48,9 @@ namespace AI.Controller
         }
         private void Update()
         {
-            if (health.IsDead()) return;
+           // if (health.IsDead()) return;
 
-            if (IsAggrevated() && fighter.CanAttack(player))
+            if (IsAggrevated()) //&& fighter.CanAttack(player))
             {
 
                 AttackBehaviour();
@@ -97,7 +94,7 @@ namespace AI.Controller
 
             if (timeSinceArrivedAtWaypoint > waypointDwellTime)
             {
-                mover.StartMoveAction(nextPosition, patrolSpeedFraction);
+               // mover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }
 
         }
@@ -125,7 +122,7 @@ namespace AI.Controller
         private void AttackBehaviour()
         {
             timeSinceLastSawPlayer = 0f;
-            fighter.Attack(player);
+            //fighter.Attack(player);
 
             AggrevateNearbyEnemies();
         }
