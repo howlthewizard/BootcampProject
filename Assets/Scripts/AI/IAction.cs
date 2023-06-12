@@ -1,4 +1,4 @@
-namespace AI.AI
+namespace AI.Core
 {
     public interface IAction
     {

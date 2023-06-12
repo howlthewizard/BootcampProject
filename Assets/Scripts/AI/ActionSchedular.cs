@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace AI.AI
+namespace AI.Core
 {
     public class ActionScheduler : MonoBehaviour
     {
