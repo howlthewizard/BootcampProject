@@ -4,6 +4,7 @@ using UnityEngine;
 using Attributes;
 using AI.Utils;
 using AI.Movement;
+using AI.Combat;
 
 namespace AI.Controller
 {

@@ -121,8 +121,7 @@ namespace AI.Combat
         public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) return false;
-            if (!GetComponent<AIMover>().CanMoveTo(combatTarget.transform.position)
-               && !GetisInRange(combatTarget.transform))
+            if (!GetisInRange(combatTarget.transform))
             { return false; }
 
             Health targetToTest = combatTarget.GetComponent<Health>();
