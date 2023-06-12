@@ -1,4 +1,4 @@
-﻿namespace GameDevTV.Utils
+﻿namespace AI.Utils
 {
     /// Container class that wraps a value and ensures initialisation is 
     /// called just before first use.
