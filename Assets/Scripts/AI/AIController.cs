@@ -1,7 +1,10 @@
-using GameDevTV.Utils;
-using AI.AI;
+using AI.Core;
 using System;
 using UnityEngine;
+using Attributes;
+using AI.Utils;
+using AI.Movement;
+using AI.Combat;
 
 namespace AI.Controller
 {
@@ -20,7 +23,7 @@ namespace AI.Controller
         Fighter fighter;
         Health health;
         GameObject player;
-        Mover mover;
+        AIMover aiMover;
 
         float timeSinceLastSawPlayer = Mathf.Infinity;
         float timeSinceArrivedAtWaypoint = Mathf.Infinity;
@@ -34,7 +37,7 @@ namespace AI.Controller
         {
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
-            mover = GetComponent<Mover>();
+            aiMover = GetComponent<AIMover>();
             player = GameObject.FindWithTag("Player");
 
         }
@@ -48,9 +51,9 @@ namespace AI.Controller
         }
         private void Update()
         {
-           // if (health.IsDead()) return;
+            if (health.IsDead()) return;
 
-            if (IsAggrevated()) //&& fighter.CanAttack(player))
+            if (IsAggrevated() )//&& fighter.CanAttack(player))//Fighter METODU LAZIM
             {
 
                 AttackBehaviour();
@@ -94,7 +97,7 @@ namespace AI.Controller
 
             if (timeSinceArrivedAtWaypoint > waypointDwellTime)
             {
-               // mover.StartMoveAction(nextPosition, patrolSpeedFraction);
+                aiMover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }
 
         }
