@@ -40,6 +40,7 @@ namespace AI.Controller
             aiMover = GetComponent<AIMover>();
             player = GameObject.FindWithTag("Player");
 
+            guardPosition = new LazyValue<Vector3>(GetGuardPosition);
         }
         private Vector3 GetGuardPosition()
         {
@@ -53,9 +54,7 @@ namespace AI.Controller
         {
             if (health.IsDead()) return;
 
-            if (IsAggrevated() )//&& fighter.CanAttack(player))//Fighter METODU LAZIM
-            {
-
+            if (IsAggrevated() && fighter.CanAttack(player)){
                 AttackBehaviour();
             }
             else if (timeSinceLastSawPlayer < suspicionTime)
