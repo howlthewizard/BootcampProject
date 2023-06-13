@@ -3,9 +3,9 @@ namespace AI.Stats
     public enum CharacterClass
     {
         Player,
-        Grunt,
+        Witch,
         Boss,
-        Archer,
+        Barbarian,
 
     }
 }
