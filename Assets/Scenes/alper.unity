@@ -808,6 +808,7 @@ GameObject:
   - component: {fileID: 986652256}
   - component: {fileID: 986652257}
   - component: {fileID: 986652258}
+  - component: {fileID: 986652259}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -927,6 +928,7 @@ MonoBehaviour:
   _speed: 10.05
   _turnSpeed: 1000
   _model: {fileID: 986652255}
+  _animator: {fileID: 986652259}
   isMoving: 0
   lastMovePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &986652257
@@ -960,6 +962,27 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &986652259
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986652249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8004cdeec16447540a59edda39c3678a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1088442365
 GameObject:
   m_ObjectHideFlags: 3

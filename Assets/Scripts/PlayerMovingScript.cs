@@ -8,13 +8,19 @@ public class PlayerMovingScript : MonoBehaviour
     [SerializeField] private float _speed = 5;
     [SerializeField] private float _turnSpeed = 360;
     [SerializeField] private Transform _model;
+    [SerializeField] private Animator _animator;
     public bool isMoving = false;
     private Vector3 _input;
     public Vector3 lastMovePosition;
 
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         isMoving = false;
+        _animator.SetFloat("forwardSpeed", 0f);
         GatherInput();
         Look();
     }
@@ -42,6 +48,7 @@ public class PlayerMovingScript : MonoBehaviour
         _rb.MovePosition(transform.position + _input.ToIso() * _input.normalized.magnitude * _speed * Time.deltaTime);
         lastMovePosition = _rb.position;
         isMoving = true;
+        _animator.SetFloat("forwardSpeed",_speed);
     }
 }
 
