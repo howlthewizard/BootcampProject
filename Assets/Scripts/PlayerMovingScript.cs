@@ -27,7 +27,7 @@ public class PlayerMovingScript : MonoBehaviour
     private void Update()
     {
         isMoving = false;
-        _animator.SetFloat("forwardSpeed", 0f);
+        //_animator.SetFloat("RunSpeed", 0f);
         GatherInput();
         Look();
 
@@ -41,6 +41,7 @@ public class PlayerMovingScript : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        _animator.SetFloat("RunSpeed", 0f);
     }
 
     private void GatherInput()
@@ -61,7 +62,7 @@ public class PlayerMovingScript : MonoBehaviour
         _rb.MovePosition(transform.position + _input.ToIso() * _input.normalized.magnitude * _speed * Time.deltaTime);
         lastMovePosition = _rb.position;
         isMoving = true;
-        _animator.SetFloat("forwardSpeed",_speed);
+        _animator.SetFloat("RunSpeed",1f);
     }
 }
 
