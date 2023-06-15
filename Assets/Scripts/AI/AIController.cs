@@ -124,7 +124,7 @@ namespace AI.Controller
         private void AttackBehaviour()
         {
             timeSinceLastSawPlayer = 0f;
-            //fighter.Attack(player);
+            fighter.Attack(player);
 
             AggrevateNearbyEnemies();
         }
