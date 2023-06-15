@@ -119,9 +119,6 @@ namespace AI.Controller
             target = navMeshHit.position;
             return true;
         }
-
-
-
         private void SetCursor(CursorType type)
         {
             CursorMapping mapping = GetCursorMapping(type);
@@ -138,7 +135,6 @@ namespace AI.Controller
             }
             return cursorMappings[0];
         }
-
         private static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);

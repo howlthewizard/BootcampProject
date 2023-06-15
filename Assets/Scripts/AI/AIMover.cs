@@ -26,7 +26,7 @@ namespace AI.Movement
         {
             navMeshAgent.enabled = !health.IsDead();//If player is dead then disable NMAgent.
 
-           // UpdateAnimator();
+            UpdateAnimator();
         }
         public void StartMoveAction(Vector3 destination, float speedFraction)
         {
@@ -34,13 +34,13 @@ namespace AI.Movement
             MoveTo(destination, speedFraction);
         }
 
-       /* public void UpdateAnimator()
+        public void UpdateAnimator()
         {
             Vector3 velocity = navMeshAgent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
-        }*/
+        }
         public void Cancel()//MUST BE THE SAME METHOD NAME LIKE IN INTERFACE
         {
             navMeshAgent.isStopped = true;
