@@ -11,12 +11,25 @@ public class PlayerMovingScript : MonoBehaviour
     public bool isMoving = false;
     private Vector3 _input;
     public Vector3 lastMovePosition;
+    Animator animator;
+    public float acceleration = 0.1f;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();    
+    }
 
     private void Update()
     {
         isMoving = false;
         GatherInput();
         Look();
+
+       float velocityX = Vector3.Dot(_input.normalized,transform.right);
+       float velocityZ = Vector3.Dot(_input.normalized, transform.forward);
+
+        animator.SetFloat("VelocityX",velocityX, 0.1f, Time.deltaTime);
+        animator.SetFloat("VelocityZ",velocityZ, 0.1f, Time.deltaTime);
     }
 
     private void FixedUpdate()
