@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1139745290153841674}
   - component: {fileID: 1139745290153841675}
   m_Layer: 0
-  m_Name: Player_1
+  m_Name: BlondeKnight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ Animator:
   m_GameObject: {fileID: 1139745290153841672}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 03525955b0164c945bda4dd8f174ebc8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6fb5e7a86467c53469c04bb1cfbf1efc, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
