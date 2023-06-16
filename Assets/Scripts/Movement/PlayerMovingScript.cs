@@ -41,7 +41,6 @@ public class PlayerMovingScript : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-        _animator.SetFloat("RunSpeed", 0f);
     }
 
     private void GatherInput()
@@ -62,7 +61,6 @@ public class PlayerMovingScript : MonoBehaviour
         _rb.MovePosition(transform.position + _input.ToIso() * _input.normalized.magnitude * _speed * Time.deltaTime);
         lastMovePosition = _rb.position;
         isMoving = true;
-        _animator.SetFloat("RunSpeed",1f);
     }
 }
 
