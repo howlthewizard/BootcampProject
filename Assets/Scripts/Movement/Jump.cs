@@ -5,25 +5,41 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public Rigidbody rb;
-    public float jumpingForce;
-    bool isJumping;
+    public bool isGrounded = true;
+    public float fallMultiplier = 5000f;
+    public float lowJumpMultiplier = 4000f;
+    public float jumpForce = 50;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(rb.velocity.y < 0)
         {
-            isJumping = true;
+            rb.velocity += Vector3.up * Physics.gravity.y * fallMultiplier * Time.deltaTime;
+        }else if(rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.velocity += Vector3.up * Physics.gravity.y * lowJumpMultiplier * Time.deltaTime;
         }
     }
 
     private void FixedUpdate()
     {
-        if (isJumping)
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(Vector3.up * jumpingForce);
-            isJumping = false;
+            rb.velocity = Vector3.up * jumpForce;
+            isGrounded = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            isGrounded = true;
         }
     }
 }

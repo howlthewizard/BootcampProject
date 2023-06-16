@@ -6,6 +6,7 @@ TagManager:
   tags:
   - windMill
   - waterMill
+  - Ground
   layers:
   - Default
   - TransparentFX
