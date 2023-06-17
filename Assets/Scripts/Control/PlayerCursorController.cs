@@ -92,10 +92,10 @@ namespace AI.Controller
             if (hasHit)
             {
                 if (!GetComponent<AIMover>().CanMoveTo(target)) return false;
-                /*if (Input.GetMouseButton(0))
+                if (Input.GetMouseButton(0))
                 {
                     GetComponent<AIMover>().StartMoveAction(target, 10f);
-                }*/
+                }
                 SetCursor(CursorType.Movement);
                 return true;
             }
