@@ -1,18 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using AI.Combat;
+using AI.Controller;
+using Attributes;
 
-public class CombatTarget : MonoBehaviour
+namespace AI.Combat
 {
-    // Start is called before the first frame update
-    void Start()
+    [RequireComponent(typeof(Health))]
+    public class CombatTarget : MonoBehaviour, IRaycastable
     {
-        
-    }
+        public CursorType GetCursorType()
+        {
+            return CursorType.Combat;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public bool HandleRaycast(PlayerCursorController callingController)
+        {
+            if (!callingController.GetComponent<Fighter>().CanAttack(gameObject))
+            {
+                return false; //Means we cannot handle attack.
+            }
+            if (Input.GetMouseButton(0))
+            {
+                callingController.GetComponent<Fighter>().Attack(gameObject); // for this particular target.
+            }
+            return true;
+        }
     }
 }
