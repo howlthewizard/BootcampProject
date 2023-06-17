@@ -759,7 +759,7 @@ PrefabInstance:
     - target: {fileID: 7472836315949908765, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9f934a51c37d4af429b328a07685233b, type: 2}
+      objectReference: {fileID: 9100000, guid: 8004cdeec16447540a59edda39c3678a, type: 2}
     - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
