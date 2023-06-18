@@ -20,13 +20,15 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 - Oyun Hikayesi: Oyuncular, bir şövalyeyi kontrol ettikleri oyunda Vhalandor olarak bilinen bir krallıkta maceraya atılırlar. Hikâye, şövalyenin çocukluk masallarında duyduğu sürgün kralın izine düşmesiyle başlar ve oyuncu, sürgün kralı esaretinden kurtarmak ve krallığı saran karanlığı yenmek için macera dolu bir yolculuğa çıkar. <br/>
 - Heyecan Verici Platform-Aksiyon Oynanışı: Oyun, hareketli ve hızlı bir platform-aksiyon oynanışı sunar. Zorlu platform bölümlerini aşarken düşmanlarla savaşacak, yeteneklerini kullanacak ve dikkatlice atlayışlar yaparak ilerleyeceksin. <br/>
 - Zorlu Düşmanlar ve Boss savaşları: Yolculuğun boyunca A, B ve C dünyalarında çeşitli düşmanlarla karşılaşacaksın. Bunlar, seni engellemeye çalışan kasvetkarlar(A), kemikburunlar(B) ve kankükreyenlerdir(C). Ayrıca bosslar da yüzleşecek ve onları yenmek için strateji ve becerilerini kullanacaksın. <br/>
-- Sanat Tarzı: Oyun, canlı bir renk paletine sahip olan cartoon grafiklerden oluşmaktadır. Mezarlıklarda, zindanlarda ve tehlikeli ormanlarda gezerken oyunculara keşfetme ve hayal gücünü harekete geçirme imkanını sunar. <br/>
+- Sanat Tarzı: <br/>
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
 ## Product Backlog
 [Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 # Sprint 1
 - **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayeler detaylarıyla okunabilir.
+
+- **Sprint Notları 2:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplantı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 150 Puan
 
@@ -35,11 +37,9 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprintlerin her birine görevler atanmıştır ve her bir göreve verilen puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. <br/>
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır.[Daily Scrum Chats.pdf](https://github.com/howlthewizard/BootcampProject/files/11782226/Daily.Scrum.Chats.pdf) <br/>
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
-
--	**Günlük notlar:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplanntı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
 
 -	**Sprint board update:** Sprint board screenshotları:
 
@@ -70,13 +70,29 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 ![Ekran görüntüsü 2023-06-18 152004](https://github.com/howlthewizard/BootcampProject/assets/117678371/9366e691-307a-487b-936d-8653fc09db1a)
 
 -	**Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu. <br/>
-*Alınan Kararlar* <br/>
-*Toplantı Katılımcıları* <br/>
+*Konuşulan Konular* <br/>
+- **Ahmet Alper Akın:** Karakter hareket kodunu ve kamera takip kodunu yazdı. Sınavlarından ötürü vakit ayırmakta biraz zorlandı.
+- **Aybala Kılınç:** UI için kod yazdı; rüzgar. yağmur ve görsel efekt ekledi.
+- **Merve İnce:** Karakter modellerini düzenledi, animasyonlara baktı. Tezinden ötürü biraz zaman bulmakta zorlandı.
+- **Muhammet Mustafa Özdemir:** Base kısmını detaylı bir şekilde tamamladı.
+- **Ömer Faruk İlhan:** Düşman davranışlarına(devriye sistemine) baktı. Karaktere silah ekledi. Animatör kısmında bir sorun yaşadı.
+
+- **Toplantı Katılımcıları:** Ahmet Alper Akın, Aybala Kılınç, Merve İnce, Muhammet Mustafa Özdemir, Ömer Faruk İlhan
 
 -	**Sprint Retrospective:** Biraz 1. Sprint hakkında düşündük. Nelerin iyi gittiği, hangi sorunlar ile karşılaştiğımız ve nelerin geliştirilmesi gerektiği hakkında konuştuk.
 
-*Neler iyi gitti?*
+*Neler iyi gitti?* <br/>
+- Takımda iletişim hızlı bir şekilde kuruldu.
+- Discrod'da her gün toplantı yapıldı.
+- Oyunun görseli beklenenden daha iyi dizayn edildi.
+- HDRP'yi kullanmaya karar verip bazı faydalarından yararlanıldı.
 
-*Hangi sorunlar ile karşılaştık?*
+*Hangi sorunlar ile karşılaştık?* <br/>
+- GitHub'da conflict yaşadık ve çözemedik.
 
-*Neler geliştirilmeli?*
+*Neler geliştirilmeli?* <br/>
+- Herkes daily scrumlara daha çok önem vermeli.
+- Conflictlere karşı proje her zaman kopyalanmalı.
+- Product Backlog daha iyi düzenlenmeli
+
+![Ekran görüntüsü 2023-06-18 201050](https://github.com/howlthewizard/BootcampProject/assets/117678371/cf98164c-5445-49e8-99a8-e6ab77ab0bd1)
