@@ -24,7 +24,7 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
 ## Product Backlog
-[Miro Backlog Board]([https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=822737199482](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441))
+[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 # Sprint 1
 - **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayeler detaylarıyla okunabilir.
 
