@@ -69,13 +69,12 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 ![Ekran görüntüsü 2023-06-18 152004](https://github.com/howlthewizard/BootcampProject/assets/117678371/9366e691-307a-487b-936d-8653fc09db1a)
 
--	**Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu. <br/>
-*Konuşulan Konular* <br/>
-- **Ahmet Alper Akın:** Karakter hareket kodunu ve kamera takip kodunu yazdı. Sınavlarından ötürü vakit ayırmakta biraz zorlandı.
-- **Aybala Kılınç:** UI için kod yazdı; rüzgar. yağmur ve görsel efekt ekledi.
-- **Merve İnce:** Karakter modellerini düzenledi, animasyonlara baktı. Tezinden ötürü biraz zaman bulmakta zorlandı.
-- **Muhammet Mustafa Özdemir:** Base kısmını detaylı bir şekilde tamamladı.
-- **Ömer Faruk İlhan:** Düşman davranışlarına(devriye sistemine) baktı. Karaktere silah ekledi. Animatör kısmında bir sorun yaşadı.
+- **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu.
+  * **Ahmet Alper Akın:** Karakter hareket kodunu ve kamera takip kodunu yazdı. Sınavlarından ötürü vakit ayırmakta biraz zorlandı.
+  * **Aybala Kılınç:** UI için kod yazdı; rüzgar. yağmur ve görsel efekt ekledi.
+  * **Merve İnce:** Karakter modellerini düzenledi, animasyonlara baktı. Tezinden ötürü biraz zaman bulmakta zorlandı.
+  * **Muhammet Mustafa Özdemir:** Base kısmını detaylı bir şekilde tamamladı.
+  * **Ömer Faruk İlhan:** Düşman davranışlarına(devriye sistemine) baktı. Karaktere silah ekledi. Animatör kısmında bir sorun yaşadı.
 
 - **Toplantı Katılımcıları:** Ahmet Alper Akın, Aybala Kılınç, Merve İnce, Muhammet Mustafa Özdemir, Ömer Faruk İlhan
 
