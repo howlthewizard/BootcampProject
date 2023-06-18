@@ -35,7 +35,8 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprintlerin her birine görevler atanmıştır ve her bir göreve verilen puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. 
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. <br/>
+
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
 
 -	**Günlük notlar:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplanntı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
