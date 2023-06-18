@@ -1,4 +1,4 @@
-# BootcampProject
+# Takım İsmi
 **Golden Pickle Games**
 # Ürün İle İlgili Bilgiler
 ## Takım Elemanları
