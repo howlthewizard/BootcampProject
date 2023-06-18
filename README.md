@@ -26,7 +26,7 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 ## Product Backlog
 [Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 # Sprint 1
-- **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayeler detaylarıyla okunabilir.
+- **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler ve görevler product backlog'ların içine yazılmıştır.
 
 - **Sprint Notları 2:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplantı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
 
@@ -35,7 +35,7 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 
 -	**Puan tamamlama mantığı:** Proje boyunca toplam tamamlanması gereken 350 puanlık bir backlog bulunmaktadır. Projede üç sprint bulunmaktadır ve ilkine 150 puan ayrılmasına karar verilmiştir.
 
--	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprintlerin her birine görevler atanmıştır ve her bir göreve verilen puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
+-	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
 
 -	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats.pdf](https://github.com/howlthewizard/BootcampProject/files/11782226/Daily.Scrum.Chats.pdf) <br/>
 
