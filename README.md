@@ -43,15 +43,15 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Sprint board update:** Sprint board screenshotları:
 
-![Ekran görüntüsü 2023-06-18 150333](https://github.com/howlthewizard/BootcampProject/assets/117678371/92fec34c-c8ac-48ab-b6f5-c9145638a09f)
+![Ekran görüntüsü 2023-06-18 164506](https://github.com/howlthewizard/BootcampProject/assets/117678371/455282ba-3b08-459d-ba4f-64423340ef41)
 
-![Ekran görüntüsü 2023-06-18 150453](https://github.com/howlthewizard/BootcampProject/assets/117678371/7552fa69-3586-4f3e-8122-7cb703462ae4)
+![Ekran görüntüsü 2023-06-18 164006](https://github.com/howlthewizard/BootcampProject/assets/117678371/9668c2df-bcf9-4eca-93a3-74d34db7cc43)
 
-![Ekran görüntüsü 2023-06-18 150613](https://github.com/howlthewizard/BootcampProject/assets/117678371/7a57779f-00ec-40eb-9644-0879d4861f04)
+![Ekran görüntüsü 2023-06-18 164139](https://github.com/howlthewizard/BootcampProject/assets/117678371/76f1d82d-ba74-4531-bf9f-2a3e57f0b6c1)
 
-![Ekran görüntüsü 2023-06-18 150652](https://github.com/howlthewizard/BootcampProject/assets/117678371/f4f4df73-4d2e-494f-bdda-dc7fb9e794c5)
+![Ekran görüntüsü 2023-06-18 164210](https://github.com/howlthewizard/BootcampProject/assets/117678371/72f2d5d9-6ee8-4734-a00b-907c302cb1a8)
 
-![Ekran görüntüsü 2023-06-18 150817](https://github.com/howlthewizard/BootcampProject/assets/117678371/c5e22b9d-e8fe-4f32-a6ae-1b840045062d)
+![Ekran görüntüsü 2023-06-18 165015](https://github.com/howlthewizard/BootcampProject/assets/117678371/6c824df9-4f6d-42d6-a06b-f958370e32ae)
 
 -	**Ürün Durumu:** Ekran görüntüleri:
 
