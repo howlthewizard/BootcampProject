@@ -18,7 +18,7 @@ namespace AI.Stats
 
         private float GetBaseStat(Stat stat)
         {
-            return progression.GetStat(stat, characterClass, 1);
+            return progression.GetStat(stat, characterClass, startingLevel);
         }
         private float GetAdditiveModifier(Stat stat)
         {

@@ -19,6 +19,10 @@ namespace Attributes
         {
             _health = new LazyValue<float>(GetInitialHealth);
         }
+        private void Update()
+        {
+            Debug.Log(_health.value);
+        }
         private float GetInitialHealth()
         {
             return GetComponent<BaseStats>().GetStat(Stat.Health);
