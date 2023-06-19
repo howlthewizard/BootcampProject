@@ -45,7 +45,7 @@ namespace AI.Combat
 
             if (!GetisInRange(target.transform))
             {
-                GetComponent<AIMover>().MoveTo(target.transform.position, 1f);
+                GetComponent<AIMover>().MoveTo(target.transform.position, 10f);
             }
             else
             {
@@ -89,23 +89,19 @@ namespace AI.Combat
         }
 
         //Animaton Event.
-        public void Hit()
+        void Hit()
         {
             if (target == null) return;
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
 
-            if (currentWeapon.value != null)
+            /*if (currentWeapon.value != null)
             {
                 currentWeapon.value.OnHit();//If current weapon isn't null then trigger OnHit event.
-            }
-            
-            else//melee attack.
-            {
-                //We give damage to the target in these lines
-
+            }*/
+          
                 target.TakeDamage(gameObject, damage);
-            }
+            
         }
         //Bow Animation Event.
         void Shoot() // Its name needs to be same as animation name on the Animation Window.
