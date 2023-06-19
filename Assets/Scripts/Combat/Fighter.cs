@@ -89,7 +89,7 @@ namespace AI.Combat
         }
 
         //Animaton Event.
-        void Hit()
+        public void Hit()
         {
             if (target == null) return;
 
