@@ -71,7 +71,7 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 - **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu.
   * **Ahmet Alper Akın:** Karakter hareket kodunu ve kamera takip kodunu yazdı. Sınavlarından ötürü vakit ayırmakta biraz zorlandı.
-  * **Aybala Kılınç:** UI için kod yazdı; rüzgar. yağmur ve görsel efekt ekledi.
+  * **Aybala Kılınç:** UI için kod yazdı; rüzgar, yağmur ve görsel efekt ekledi.
   * **Merve İnce:** Karakter modellerini düzenledi, animasyonlara baktı. Tezinden ötürü biraz zaman bulmakta zorlandı.
   * **Muhammet Mustafa Özdemir:** Base kısmını detaylı bir şekilde tamamladı.
   * **Ömer Faruk İlhan:** Düşman davranışlarına(devriye sistemine) baktı. Karaktere silah ekledi. Animatör kısmında bir sorun yaşadı.
@@ -95,3 +95,5 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 - Product Backlog daha iyi düzenlenmeli
 
 ![Ekran görüntüsü 2023-06-18 201050](https://github.com/howlthewizard/BootcampProject/assets/117678371/cf98164c-5445-49e8-99a8-e6ab77ab0bd1)
+
+- **Jüriye Özel Notlar:** Sprint Review ve Sprint Retrospective toplantısı çizelgesi Miro'da tarafımızdan paylaşılmaktadır. [Miro Sprint Review ve Sprint Retrospective toplantısı](https://miro.com/app/board/uXjVM9qn4-Q=/?share_link_id=494475938040)
