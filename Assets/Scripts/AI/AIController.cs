@@ -41,11 +41,14 @@ namespace AI.Controller
             player = GameObject.FindWithTag("Player");
 
             guardPosition = new LazyValue<Vector3>(GetGuardPosition);
-            guardPosition.ForceInit();
         }
         private Vector3 GetGuardPosition()
         {
             return transform.position;
+        }
+        private void Start()
+        {
+            guardPosition.ForceInit();
         }
         private void Update()
         {

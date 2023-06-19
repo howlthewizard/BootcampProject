@@ -15,7 +15,6 @@ namespace AI.Combat
 
         public bool HandleRaycast(PlayerCursorController callingController)
         {
-            if(!enabled) return false;
             if (!callingController.GetComponent<Fighter>().CanAttack(gameObject))
             {
                 return false; //Means we cannot handle attack.

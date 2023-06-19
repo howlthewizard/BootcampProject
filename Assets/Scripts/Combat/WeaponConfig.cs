@@ -1,5 +1,3 @@
-using AI.Stats;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace AI.Combat
@@ -71,21 +69,6 @@ namespace AI.Combat
             if (isRightHanded) handTransform = rightHand;
             else handTransform = leftHand;
             return handTransform;
-        }
-        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return weaponDamage;
-            }
-        }
-
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return percentageBonus;
-            }
         }
     }
 }
