@@ -94,18 +94,20 @@ namespace AI.Combat
             if (target == null) return;
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
+            target.TakeDamage(gameObject, damage);
 
-            if (currentWeapon.value != null)
+            /*if (currentWeapon.value != null)
             {
                 currentWeapon.value.OnHit();//If current weapon isn't null then trigger OnHit event.
-            }
-            
-            else//melee attack.
+            }*/
+
+           /* else//melee attack.
             {
                 //We give damage to the target in these lines
 
-                target.TakeDamage(gameObject, damage);
-            }
+                
+            }*/
+
         }
         //Bow Animation Event.
         void Shoot() // Its name needs to be same as animation name on the Animation Window.
