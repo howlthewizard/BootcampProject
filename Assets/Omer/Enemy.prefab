@@ -758,7 +758,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1138497344972311236, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_Speed
-      value: 1.2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138497344972311236, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138497344972311236, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: m_ObstacleAvoidanceType
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_Name
@@ -766,7 +774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311288, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311288, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -803,6 +811,10 @@ PrefabInstance:
     - target: {fileID: 1138497344972311288, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138497344972311290, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: maxSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_RootOrder
@@ -917,40 +929,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdcf4069d1604364ebfe74b698f9988a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseDistance: 5
+  chaseDistance: 10
   suspicionTime: 3
-  aggroCooldownTime: 5
+  agroCooldownTime: 5
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 3
   patrolSpeedFraction: 0.2
   shoutDistance: 5
---- !u!114 &1339786488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472836315949908757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef6462e68d2fb724497c622254733575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fighters:
-  - {fileID: 7472836315949908760}
-  activateOnStart: 1
---- !u!114 &7472836315949908760 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1138497344972311294, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
-  m_PrefabInstance: {fileID: 7527793461716158950}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472836315949908757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6916f36ddc1c4941b1fd9069b26ecf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7472836315949908762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
