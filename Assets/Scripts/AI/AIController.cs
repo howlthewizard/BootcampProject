@@ -1,36 +1,36 @@
-using AI.Core;
 using System;
 using UnityEngine;
-using Attributes;
-using AI.Utils;
-using AI.Movement;
+using UnityEngine.AI;
 using AI.Combat;
+using AI.Controller;
+using AI.Core;
+using AI.Utils;
+using Attributes;
+using AI.Movement;
 
-namespace AI.Controller
+namespace AI.Control
 {
     public class AIController : MonoBehaviour
     {
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float suspicionTime = 3f;
-        [SerializeField] float aggroCooldownTime = 5f;
+        [SerializeField] float agroCooldownTime = 5f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
         [SerializeField] float waypointDwellTime = 3f;
-        [Range(0f, 1f)]
+        [Range(0, 1)]
         [SerializeField] float patrolSpeedFraction = 0.2f;
         [SerializeField] float shoutDistance = 5f;
 
         Fighter fighter;
         Health health;
-        GameObject player;
         AIMover aiMover;
+        GameObject player;
 
+        LazyValue<Vector3> guardPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
         float timeSinceArrivedAtWaypoint = Mathf.Infinity;
         float timeSinceAggrevated = Mathf.Infinity;
-
-        LazyValue<Vector3> guardPosition;
-
         int currentWaypointIndex = 0;
 
         private void Awake()
@@ -41,21 +41,34 @@ namespace AI.Controller
             player = GameObject.FindWithTag("Player");
 
             guardPosition = new LazyValue<Vector3>(GetGuardPosition);
+            guardPosition.ForceInit();
         }
+
+        public void Reset()
+        {
+            NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.Warp(guardPosition.value);
+            timeSinceLastSawPlayer = Mathf.Infinity;
+            timeSinceArrivedAtWaypoint = Mathf.Infinity;
+            timeSinceAggrevated = Mathf.Infinity;
+            currentWaypointIndex = 0;
+        }
+
         private Vector3 GetGuardPosition()
         {
             return transform.position;
         }
+
         private void Start()
         {
-            guardPosition.ForceInit();
-
         }
+
         private void Update()
         {
             if (health.IsDead()) return;
 
-            if (IsAggrevated() && fighter.CanAttack(player)){
+            if (IsAggrevated() && fighter.CanAttack(player))
+            {
                 AttackBehaviour();
             }
             else if (timeSinceLastSawPlayer < suspicionTime)
@@ -68,8 +81,8 @@ namespace AI.Controller
             }
 
             UpdateTimers();
-
         }
+
         public void Aggrevate()
         {
             timeSinceAggrevated = 0;
@@ -85,25 +98,27 @@ namespace AI.Controller
         private void PatrolBehaviour()
         {
             Vector3 nextPosition = guardPosition.value;
+
             if (patrolPath != null)
             {
-                if (AtWaypoint())//The LOOP about when you are at the waypoint go for the next one.
+                if (AtWaypoint())
                 {
-                    timeSinceArrivedAtWaypoint = 0f;
-                    CycleWaypoint();//Add waypoint index +1, if it is the last index then repeat loop.
+                    timeSinceArrivedAtWaypoint = 0;
+                    CycleWaypoint();
                 }
-                nextPosition = GetCurrentWaypoint(); //Decide where is the next destination.
+                nextPosition = GetCurrentWaypoint();
             }
 
             if (timeSinceArrivedAtWaypoint > waypointDwellTime)
             {
                 aiMover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }
-
         }
-        private Vector3 GetCurrentWaypoint()
+
+        private bool AtWaypoint()
         {
-            return patrolPath.GetWaypoint(currentWaypointIndex);
+            float distanceToWaypoint = Vector3.Distance(transform.position, GetCurrentWaypoint());
+            return distanceToWaypoint < waypointTolerance;
         }
 
         private void CycleWaypoint()
@@ -111,10 +126,9 @@ namespace AI.Controller
             currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
         }
 
-        private bool AtWaypoint()
+        private Vector3 GetCurrentWaypoint()
         {
-            float distanceToWaypoint = Vector3.Distance(transform.position, GetCurrentWaypoint());
-            return distanceToWaypoint < waypointTolerance;
+            return patrolPath.GetWaypoint(currentWaypointIndex);
         }
 
         private void SuspicionBehaviour()
@@ -124,7 +138,7 @@ namespace AI.Controller
 
         private void AttackBehaviour()
         {
-            timeSinceLastSawPlayer = 0f;
+            timeSinceLastSawPlayer = 0;
             fighter.Attack(player);
 
             AggrevateNearbyEnemies();
@@ -145,13 +159,14 @@ namespace AI.Controller
         private bool IsAggrevated()
         {
             float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
-            return distanceToPlayer < chaseDistance || timeSinceAggrevated < aggroCooldownTime;
+            return distanceToPlayer < chaseDistance || timeSinceAggrevated < agroCooldownTime;
         }
+
+        // Called by Unity
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.cyan;
+            Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
         }
     }
-
 }
