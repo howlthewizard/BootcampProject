@@ -1,9 +1,12 @@
+using AI.Stats;
+using Attributes;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AI.Combat
 {
     [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/MakeNewWeapon", order = 0)]
-    public class WeaponConfig : ScriptableObject
+    public class WeaponConfig : ScriptableObject,IModifierProvider
     {
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] Weapon equippedPrefab = null;
@@ -11,6 +14,7 @@ namespace AI.Combat
         [SerializeField] float percentageBonus = 0;
         [SerializeField] float weaponRange = 2f;
         [SerializeField] bool isRightHanded = true;
+        [SerializeField] Projectile projectile = null;
 
         const string weaponName = "Weapon";
 
@@ -69,6 +73,32 @@ namespace AI.Combat
             if (isRightHanded) handTransform = rightHand;
             else handTransform = leftHand;
             return handTransform;
+        }
+        public bool HasProjectile()
+        {
+            return projectile != null;
+        }
+
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDamage)
+        {
+            Projectile projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
+            projectileInstance.SetTarget(target, instigator, calculatedDamage);
+        }
+
+        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return weaponDamage;
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return percentageBonus;
+            }
         }
     }
 }
