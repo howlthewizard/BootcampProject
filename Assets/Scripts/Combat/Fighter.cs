@@ -8,12 +8,13 @@ using Attributes;
 
 namespace AI.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction
     {
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] WeaponConfig defaultWeapon = null;
+        [SerializeField] float autoAttackRange = 4f;
 
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
@@ -81,6 +82,48 @@ namespace AI.Combat
         {
             return target;
         }
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if (isRightHand)
+            {
+                return rightHandTransform;
+            }
+            else
+            {
+                return leftHandTransform;
+            }
+        }
+        private Health FindNewTargetInRange()
+        {
+            Health best = null;
+            float bestDistance = Mathf.Infinity;
+            foreach (var candidate in FindAllTargetsInRange())
+            {
+                float candidateDistance = Vector3.Distance(
+                    transform.position, candidate.transform.position);
+                if (candidateDistance < bestDistance)
+                {
+                    best = candidate;
+                    bestDistance = candidateDistance;
+                }
+            }
+            return best;
+        }
+
+        private IEnumerable<Health> FindAllTargetsInRange()
+        {
+            RaycastHit[] raycastHits = Physics.SphereCastAll(transform.position,
+                                                autoAttackRange, Vector3.up);
+            foreach (var hit in raycastHits)
+            {
+                Health health = hit.transform.GetComponent<Health>();
+                if (health == null) continue;
+                if (health.IsDead()) continue;
+                if (health.gameObject == gameObject) continue;
+                yield return health;
+            }
+        }
+
 
         private void TriggerAttack()
         {
@@ -94,19 +137,23 @@ namespace AI.Combat
             if (target == null) return;
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
-            target.TakeDamage(gameObject, damage);
 
-            /*if (currentWeapon.value != null)
+            if (currentWeapon.value != null)
             {
                 currentWeapon.value.OnHit();//If current weapon isn't null then trigger OnHit event.
-            }*/
+            }
 
-           /* else//melee attack.
+            if (currentWeaponConfig.HasProjectile())
+            {
+                currentWeaponConfig.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
+            }
+            else//melee attack.
             {
                 //We give damage to the target in these lines
 
-                
-            }*/
+            target.TakeDamage(gameObject, damage);
+
+            }
 
         }
         //Bow Animation Event.
@@ -145,20 +192,6 @@ namespace AI.Combat
         {
             GetComponent<Animator>().ResetTrigger("attack");
             GetComponent<Animator>().SetTrigger("stopAttack");
-        }
-        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return currentWeaponConfig.GetDamage();//We keep that in the list
-            }
-        }
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return currentWeaponConfig.GetPercentageBonus();
-            }
         }
 
     }

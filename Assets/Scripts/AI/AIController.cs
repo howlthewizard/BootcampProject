@@ -49,6 +49,7 @@ namespace AI.Controller
         private void Start()
         {
             guardPosition.ForceInit();
+
         }
         private void Update()
         {
