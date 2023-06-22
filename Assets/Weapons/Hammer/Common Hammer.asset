@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
-  m_Name: Axe
+  m_Name: Common Hammer
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 9816d7f51fcd215478fe24928380fe02, type: 2}
-  equippedPrefab: {fileID: 4102689125654129166, guid: 91877006b7c00fc48828a28722a8fe29, type: 3}
+  animatorOverride: {fileID: 22100000, guid: ff9c9032e86fb064087084a5a06879c9, type: 2}
+  equippedPrefab: {fileID: 3056064786585306176, guid: 3b2b05997e8c5fe4ca9774ff555f2ce9, type: 3}
   weaponDamage: 10
   percentageBonus: 0
   weaponRange: 2
