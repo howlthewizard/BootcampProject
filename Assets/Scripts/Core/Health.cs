@@ -12,6 +12,8 @@ namespace Attributes
         [SerializeField] UnityEvent<float> takeDamage;//When we take damage DamageText shows and slowly fades away by EVENT. Also, DamageTaken sFX played.
         [SerializeField] UnityEvent onDie;
 
+        [SerializeField] PlayerHealthBar playerHealthBar;
+
         LazyValue<float> _health;
 
         bool isDead = false;
@@ -34,6 +36,11 @@ namespace Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
+            if(this.gameObject.tag == "Player")
+            {
+                playerHealthBar.SetHealth(_health.value);
+
+            }
 
             if (_health.value == 0)
             {
@@ -49,6 +56,10 @@ namespace Attributes
         public void Heal(float healthToRestore)
         {
             _health.value = Mathf.Min(_health.value + healthToRestore, GetMaxHealthPoints());
+            if (this.gameObject.tag == "Player")
+            {
+                playerHealthBar.SetHealth(_health.value);
+            }
         }
         public float GetHealthPoints()
         {

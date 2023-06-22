@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Aybala/vfx_free_pack/Effect_Anima/Effect_Anima.smp.meta
+guid: 36f743c47deb7894489d3a7440549809
+========
 guid: 3c9c12b9dbfce2b42875239d3b94d1eb
+>>>>>>>> main:Assets/Assets/dwarf-dungeon-gate/source/Gate.rar.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

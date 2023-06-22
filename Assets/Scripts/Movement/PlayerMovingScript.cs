@@ -31,11 +31,11 @@ public class PlayerMovingScript : MonoBehaviour
         GatherInput();
         Look();
 
-       float velocityX = Vector3.Dot(_input.normalized,transform.right);
+      /* float velocityX = Vector3.Dot(_input.normalized,transform.right);
        float velocityZ = Vector3.Dot(_input.normalized, transform.forward);
 
         animator.SetFloat("VelocityX",velocityX, 0.1f, Time.deltaTime);
-        animator.SetFloat("VelocityZ",velocityZ, 0.1f, Time.deltaTime);
+        animator.SetFloat("VelocityZ",velocityZ, 0.1f, Time.deltaTime);*/
     }
 
     private void FixedUpdate()
