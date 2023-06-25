@@ -1,4 +1,5 @@
-using AI.Inventories;//ekledim,(merbiki) proje kurtarma çabasý
+
+using AI.Inventories;//ekledim,(merbiki) proje kurtarma ï¿½abasï¿½
 using System.Collections;
 using System.Collections.Generic;
 using AI.Inventories;
