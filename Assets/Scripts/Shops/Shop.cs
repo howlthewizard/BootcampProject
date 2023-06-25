@@ -306,7 +306,7 @@ namespace AI.Shops
         private float GetBarterDiscount()
         {
             BaseStats baseStats = currentShopper.GetComponent<BaseStats>();
-            float discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
+           float discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
             return (1 - Mathf.Min(discount, maximumBarterDiscount) / 100);
         }
 
@@ -370,7 +370,7 @@ namespace AI.Shops
             BaseStats stats = currentShopper.GetComponent<BaseStats>();
             if (stats == null) return 0;
 
-            return stats.GetLevel();
+            return 1;
         }
 
         public object CaptureState()
