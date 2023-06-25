@@ -1,7 +1,7 @@
-using AI.Inventories;//ekledim,(merbiki) proje kurtarma çabasý
+
+using AI.Inventories;//ekledim,(merbiki) proje kurtarma ï¿½abasï¿½
 using System.Collections;
 using System.Collections.Generic;
-using AI.Inventories;
 using UnityEngine;
 
 namespace AI.Shops
@@ -17,10 +17,14 @@ namespace AI.Shops
         }
         public IEnumerable<ShopItem> GetFilteredItems() { return null; }
         public void SelectFilter(ItemCategory category) { }
-        public void ConfirmTransaction()
-        {
+        public ItemCategory GetFilter() {  return ItemCategory.None; }  
+        public void SelectMode(bool isBuying) { }
+        public bool IsBuyingMode() { return true;}
+        public bool CanTransact() { return true; }
+        public void ConfirmTransaction() { }
 
-        }
+        public float TransactionTotal() { return 0; }
+        public void AddToTransaction(InventoryItem item, int quantity) { }
     }
 
 }
