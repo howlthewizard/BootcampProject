@@ -36,11 +36,7 @@ namespace Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
-            if(this.gameObject.tag == "Player")
-            {
-                playerHealthBar.SetHealth(_health.value);
-
-            }
+           
 
             if (_health.value == 0)
             {
@@ -51,6 +47,11 @@ namespace Attributes
             else
             {//give "damage" paramater to it in order to see the real damage that has been given.
                 takeDamage.Invoke(damage);//Assigned DamageTextSpawner script as an EVENT in the inspector. Called it everytime when character took damage.
+            }
+            if (this.gameObject.tag == "Player")
+            {
+                playerHealthBar.SetHealth(_health.value);
+
             }
         }
         public void Heal(float healthToRestore)
