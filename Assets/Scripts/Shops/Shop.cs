@@ -1,6 +1,8 @@
-using AI.Inventories;
+
+using AI.Inventories;//ekledim,(merbiki) proje kurtarma �abas�
 using System.Collections;
 using System.Collections.Generic;
+using AI.Inventories;
 using UnityEngine;
 
 namespace AI.Shops
