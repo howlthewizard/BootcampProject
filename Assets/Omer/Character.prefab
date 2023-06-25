@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1138497344972311237}
   - component: {fileID: 1138497344972311236}
   - component: {fileID: 1138497344972311291}
+  - component: {fileID: 7925276205093594747}
   - component: {fileID: 1138497344972311290}
   - component: {fileID: 1138497344972311289}
   - component: {fileID: 1138497344972311288}
@@ -127,6 +128,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7925276205093594747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138497344972311283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a08777f1310d5449b77a19e1bc5f282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!114 &1138497344972311290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   maxSpeed: 6
-  maxPathLength: 40
+  maxNavPathLength: 40
 --- !u!114 &1138497344972311289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +187,7 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls: []
+  playerHealthBar: {fileID: 0}
 --- !u!114 &1138497344972311295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +220,7 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
+  autoAttackRange: 4
 --- !u!54 &1138497344972311293
 Rigidbody:
   m_ObjectHideFlags: 0
