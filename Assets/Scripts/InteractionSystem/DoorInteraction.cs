@@ -9,7 +9,7 @@ public class DoorInteraction : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        var inventory  = interactor.GetComponent<Inventory>();
+        var inventory  = interactor.GetComponent<KeyInventory>();
 
         if (inventory == null) { return false; }
 

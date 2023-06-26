@@ -1,3 +1,4 @@
+using AI.Shops;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,16 +7,20 @@ namespace AI.UI.Shops
 {
     public class ShopUI : MonoBehaviour
     {
-        // Start is called before the first frame update
+        Shopper shopper = null;
+        Shop currentShop = null;
         void Start()
         {
+            shopper = GameObject.FindGameObjectWithTag("Player").GetComponent<Shopper>();
+            if (shopper == null) return;
 
+            shopper.activeShopChange += ShopChanged;
         }
 
-        // Update is called once per frame
-        void Update()
+        private void ShopChanged()
         {
-
+            currentShop = shopper.GetActiveShop();
+            gameObject.SetActive(currentShop != null);
         }
     }
 
