@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.3369, g: 325.0498, b: 430.21924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1309,6 +1309,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 138501061}
     m_Modifications:
+    - target: {fileID: 1879140606383395892, guid: c71617cf4ff0eaa46be18f7c1de95f8a, type: 3}
+      propertyPath: characterClass
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879140606383395893, guid: c71617cf4ff0eaa46be18f7c1de95f8a, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 36936a9d7fa59ae4fbd022c9e95003be, type: 2}
     - target: {fileID: 1879140606383395895, guid: c71617cf4ff0eaa46be18f7c1de95f8a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1593,6 +1601,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963964676}
+    - target: {fileID: 40626203075791816, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 40626203075791816, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -14
+      objectReference: {fileID: 0}
     - target: {fileID: 40626203075791817, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2558,11 +2574,11 @@ PrefabInstance:
       objectReference: {fileID: 1651074390}
     - target: {fileID: 8143492814734408886, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 74.237
+      value: 45.237
       objectReference: {fileID: 0}
     - target: {fileID: 8143492814734408886, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -174.99985
+      value: -160.99985
       objectReference: {fileID: 0}
     - target: {fileID: 8143492814888484253, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2574,11 +2590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8143492815595153596, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 226
+      value: 197
       objectReference: {fileID: 0}
     - target: {fileID: 8143492815595153596, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: -161
       objectReference: {fileID: 0}
     - target: {fileID: 8227293120794777016, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: cursorMappings.Array.size
@@ -2658,20 +2674,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f623f6eed0a274d43973531bce626187, type: 3}
---- !u!1 &9073314403784345563 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6990841717888648023, guid: f623f6eed0a274d43973531bce626187, type: 3}
-  m_PrefabInstance: {fileID: 9073314403784345562}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9073314403784345564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9073314403784345563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9142b76aa061f6646a5485569e9d9576, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
