@@ -4,7 +4,7 @@ using UnityEngine;
 namespace AI.Inventories
 {
    
-    [CreateAssetMenu(menuName = ("GameDevTV/GameDevTV.UI.InventorySystem/Action Item"))]
+    [CreateAssetMenu(menuName = ("Equipable Item/AI.UI.InventorySystem/Action Item"))]
     public class ActionItem : InventoryItem
     {
         // CONFIG DATA
