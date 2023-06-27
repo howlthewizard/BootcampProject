@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebeaaa8d336de64989ac56fb726f581, type: 3}
+  m_Name: Basic Helmet
+  m_EditorClassIdentifier: 
+  itemID: e5405d8f-dd9d-4991-bca3-a809ee0e0945
+  displayName: Hero's Helmet
+  description: A basic helmet that can protect your head. As an advice, don't expect
+    too much
+  icon: {fileID: 21300000, guid: fd6e4fc32c78509458fc45ea4a478ba8, type: 3}
+  stackable: 0
+  price: 0
+  category: 1
+  allowedEquipLocation: 0
+  equipCondition:
+    and: []
