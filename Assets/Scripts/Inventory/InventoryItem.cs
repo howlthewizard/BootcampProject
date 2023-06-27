@@ -34,7 +34,7 @@ namespace AI.Inventories
                 {
                     if (itemLookupCache.ContainsKey(item.itemID))
                     {
-                        Debug.LogError(string.Format("Looks like there's a duplicate GameDevTV.UI.InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
+                        Debug.LogError(string.Format(" there's a duplicate AI.UI.InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
                         continue;
                     }
 
@@ -45,8 +45,14 @@ namespace AI.Inventories
             if (itemID == null || !itemLookupCache.ContainsKey(itemID)) return null;
             return itemLookupCache[itemID];
         }
+        public Pickup SpawnPickup(Vector3 position, int number)
+        {
+            var pickup = Instantiate(this.pickup);
+            pickup.transform.position = position;
+            pickup.Setup(this, number);
+            return pickup;
+        }
 
-     
         public Sprite GetIcon()
         {
             return icon;
@@ -93,8 +99,7 @@ namespace AI.Inventories
 
         void ISerializationCallbackReceiver.OnAfterDeserialize()
         {
-            // Require by the ISerializationCallbackReceiver but we don't need
-            // to do anything with it.
+          
         }
     }
 }
