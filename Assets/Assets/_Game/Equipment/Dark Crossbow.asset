@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebeaaa8d336de64989ac56fb726f581, type: 3}
+  m_Name: Dark Crossbow
+  m_EditorClassIdentifier: 
+  itemID: 07bd305c-d62b-42ee-a9de-87a0990e80f4
+  displayName: Dark Crossbow
+  description: A crossbow in dark hues, a mighty weapon that has claimed countless
+    lives.
+  icon: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
+  stackable: 0
+  price: 0
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
