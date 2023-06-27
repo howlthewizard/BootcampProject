@@ -8,20 +8,9 @@ public class AudioManager : MonoBehaviour
     public AudioMixer theMixer;
     void Start()
     {
-        if (PlayerPrefs.HasKey("MasterVol"))
+        if (PlayerPrefs.HasKey("volume"))
         {
-            theMixer.SetFloat("MasterVol", PlayerPrefs.GetFloat("MasterVol"));
-        }
-        
-        if (PlayerPrefs.HasKey("MusicVol"))
-        {
-            theMixer.SetFloat("MusicVol", PlayerPrefs.GetFloat("MusicVol"));
-        }
-        
-        if (PlayerPrefs.HasKey("SFXVol"))
-        {
-            theMixer.SetFloat("SFXVol", PlayerPrefs.GetFloat("SFXVol"));
+            theMixer.SetFloat("volume", PlayerPrefs.GetFloat("volume"));
         }
     }
-    
 }
