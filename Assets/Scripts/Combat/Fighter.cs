@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 using AI.Core;
+using AI.Inventories;
 using AI.Stats;
 using AI.Utils;
 using Attributes;
@@ -17,6 +19,7 @@ namespace AI.Combat
         [SerializeField] float autoAttackRange = 4f;
 
         Health target;
+        Equipment equipment;
         float timeSinceLastAttack = Mathf.Infinity;
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
@@ -25,7 +28,11 @@ namespace AI.Combat
         {
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
-            
+            equipment = GetComponent<Equipment>();
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+            }
         }
 
         private Weapon SetupDefaultWeapon()
@@ -66,6 +73,18 @@ namespace AI.Combat
             currentWeapon.value = AttachWeapon(weapon);
         }
 
+        private void UpdateWeapon()
+        {
+            var weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            if (weapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                EquipWeapon(weapon);
+            }
+        }
 
         private Weapon AttachWeapon(WeaponConfig weapon)
         {
@@ -145,6 +164,11 @@ namespace AI.Combat
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
             BaseStats targetBaseStats = target.GetComponent<BaseStats>();
+            if (targetBaseStats != null)
+            {
+                float defence = targetBaseStats.GetStat(Stat.Defence);
+                damage /= 1 + defence / damage;
+            }
 
             if (currentWeapon.value != null)
             {

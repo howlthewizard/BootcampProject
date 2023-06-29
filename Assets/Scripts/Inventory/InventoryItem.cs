@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace AI.Inventories
 {
@@ -16,6 +17,8 @@ namespace AI.Inventories
         [SerializeField][TextArea] string description = null;
         [Tooltip("The UI icon to represent this item in the inventory.")]
         [SerializeField] Sprite icon = null;
+        [Tooltip("The prefab that should be spawned when this item is dropped.")]
+        [SerializeField] Pickup pickup = null;
         [Tooltip("The prefab that should be spawned when this item is dropped.")]
         [SerializeField] bool stackable = false;
         [SerializeField] float price;
