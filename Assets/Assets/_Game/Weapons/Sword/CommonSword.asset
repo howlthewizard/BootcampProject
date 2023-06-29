@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
   m_Name: CommonSword
   m_EditorClassIdentifier: 
+  itemID: cfdc0a64-5579-480f-b449-45a007ed5b95
+  displayName: Common Sword
+  description: 
+  icon: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+  pickup: {fileID: 3894105250079936546, guid: da7fabffbd4b05d42baa59b9446ef840, type: 3}
+  stackable: 0
+  price: 0
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
   animatorOverride: {fileID: 22100000, guid: 9816d7f51fcd215478fe24928380fe02, type: 2}
   equippedPrefab: {fileID: 8564486241643516296, guid: 28786e4f591e1a04ca9f9ea979c7806c, type: 3}
   weaponDamage: 8

@@ -9,19 +9,10 @@ namespace AI.Inventories
   
     public class Equipment : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
-        // STATE
         Dictionary<EquipLocation, EquipableItem> equippedItems = new Dictionary<EquipLocation, EquipableItem>();
 
-        // PUBLIC
-
-        /// <summary>
-        /// Broadcasts when the items in the slots are added/removed.
-        /// </summary>
+        
         public event Action equipmentUpdated;
-
-        /// <summary>
-        /// Return the item in the given equip location.
-        /// </summary>
         public EquipableItem GetItemInSlot(EquipLocation equipLocation)
         {
             if (!equippedItems.ContainsKey(equipLocation))
@@ -31,11 +22,6 @@ namespace AI.Inventories
 
             return equippedItems[equipLocation];
         }
-
-        /// <summary>
-        /// Add an item to the given equip location. Do not attempt to equip to
-        /// an incompatible slot.
-        /// </summary>
         public void AddItem(EquipLocation slot, EquipableItem item)
         {
             Debug.Assert(item.CanEquip(slot, this));
@@ -48,9 +34,6 @@ namespace AI.Inventories
             }
         }
 
-        /// <summary>
-        /// Remove the item for the given slot.
-        /// </summary>
         public void RemoveItem(EquipLocation slot)
         {
             equippedItems.Remove(slot);
@@ -60,15 +43,10 @@ namespace AI.Inventories
             }
         }
 
-        /// <summary>
-        /// Enumerate through all the slots that currently contain items.
-        /// </summary>
         public IEnumerable<EquipLocation> GetAllPopulatedSlots()
         {
             return equippedItems.Keys;
         }
-
-        // PRIVATE
 
         object ISaveable.CaptureState()
         {
