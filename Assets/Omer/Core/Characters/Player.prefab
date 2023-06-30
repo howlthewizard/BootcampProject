@@ -1116,6 +1116,9 @@ MonoBehaviour:
   - type: 3
     texture: {fileID: 2800000, guid: 65ba2c41a5c6abc44af044d633c21290, type: 3}
     hotspot: {x: 0, y: 0}
+  - type: 4
+    texture: {fileID: 2800000, guid: 1700b13a0aeeae04dab33d9038a1d1c1, type: 3}
+    hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
 --- !u!114 &1487708226422528315
@@ -1130,6 +1133,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9142b76aa061f6646a5485569e9d9576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4428984632204522529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084769567292369281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc131b39e3d55d4586f7dac6a2f5a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 10
 --- !u!114 &5859717992163591840
 MonoBehaviour:
   m_ObjectHideFlags: 0
