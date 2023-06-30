@@ -67,13 +67,35 @@ PrefabInstance:
       propertyPath: rightHandTransform
       value: 
       objectReference: {fileID: 7499371216074076303}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1138497344972311294, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
 --- !u!4 &1879140606383395895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
   m_PrefabInstance: {fileID: 1574233612569697995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1879140606383395896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+  m_PrefabInstance: {fileID: 1574233612569697995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6085124111480164484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879140606383395896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd6bdefd7441e94ca5d3d81053eb7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopName: Barbarian's Blacksmith
+  sellingPercentage: 80
+  maximumBarterDiscount: 80
+  stockConfig: []
 --- !u!1001 &2111688800323049870
 PrefabInstance:
   m_ObjectHideFlags: 0
