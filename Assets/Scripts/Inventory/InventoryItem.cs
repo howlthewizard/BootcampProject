@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace AI.Inventories
 {
@@ -16,6 +17,8 @@ namespace AI.Inventories
         [SerializeField][TextArea] string description = null;
         [Tooltip("The UI icon to represent this item in the inventory.")]
         [SerializeField] Sprite icon = null;
+        [Tooltip("The prefab that should be spawned when this item is dropped.")]
+        [SerializeField] Pickup pickup = null;
         [Tooltip("The prefab that should be spawned when this item is dropped.")]
         [SerializeField] bool stackable = false;
         [SerializeField] float price;
@@ -34,7 +37,7 @@ namespace AI.Inventories
                 {
                     if (itemLookupCache.ContainsKey(item.itemID))
                     {
-                        Debug.LogError(string.Format("Looks like there's a duplicate GameDevTV.UI.InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
+                        Debug.LogError(string.Format(" there's a duplicate AI.UI.InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
                         continue;
                     }
 
@@ -45,8 +48,14 @@ namespace AI.Inventories
             if (itemID == null || !itemLookupCache.ContainsKey(itemID)) return null;
             return itemLookupCache[itemID];
         }
+        public Pickup SpawnPickup(Vector3 position, int number)
+        {
+            var pickup = Instantiate(this.pickup);
+            pickup.transform.position = position;
+            pickup.Setup(this, number);
+            return pickup;
+        }
 
-     
         public Sprite GetIcon()
         {
             return icon;
@@ -93,8 +102,7 @@ namespace AI.Inventories
 
         void ISerializationCallbackReceiver.OnAfterDeserialize()
         {
-            // Require by the ISerializationCallbackReceiver but we don't need
-            // to do anything with it.
+          
         }
     }
 }

@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
   m_Name: BlueProjectile
   m_EditorClassIdentifier: 
+  itemID: e69725ee-4592-497f-9258-b6d3038a24e4
+  displayName: Blue Arrow Crossbow
+  description: 
+  icon: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
+  pickup: {fileID: 5273779217975174165, guid: 45109db1f3012ba4881e02cf90823596, type: 3}
+  stackable: 0
+  price: 0
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
   animatorOverride: {fileID: 22100000, guid: a5bbe750f776d4c41a671a61927fd1e8, type: 2}
   equippedPrefab: {fileID: 8896913711119399957, guid: 553a6ed606c85444db77c3ef7f97dc86, type: 3}
   weaponDamage: 5

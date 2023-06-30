@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae2e6e6f44de4a4ba4d5fba2eb84ba3, type: 3}
+  m_Name: Medium Size Health Potion
+  m_EditorClassIdentifier: 
+  itemID: 37b6de34-143e-413e-aec1-62c2cc644d9d
+  displayName: Medium Size Health Potion
+  description: An elixir that, when used, can moderately increase your vitality.
+  icon: {fileID: 21300000, guid: e52ea25af699fd445b7046374f81a5b9, type: 3}
+  stackable: 1
+  price: 0
+  category: 3
+  consumable: 1

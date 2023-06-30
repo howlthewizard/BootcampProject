@@ -1,12 +1,13 @@
+using UnityEngine;
+using System.Collections.Generic;
+using AI.Inventories;
 using AI.Stats;
 using Attributes;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace AI.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/MakeNewWeapon", order = 0)]
-    public class WeaponConfig : ScriptableObject,IModifierProvider
+    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/Make New Weapon", order = 0)]
+    public class WeaponConfig : EquipableItem, IModifierProvider
     {
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] Weapon equippedPrefab = null;
@@ -18,28 +19,29 @@ namespace AI.Combat
 
         const string weaponName = "Weapon";
 
-
         public Weapon Spawn(Transform rightHand, Transform leftHand, Animator animator)
         {
             DestroyOldWeapon(rightHand, leftHand);
+
             Weapon weapon = null;
 
             if (equippedPrefab != null)
             {
                 Transform handTransform = GetTransform(rightHand, leftHand);
-                weapon = Instantiate(equippedPrefab, handTransform);//Spawn the sword.
+                weapon = Instantiate(equippedPrefab, handTransform);
                 weapon.gameObject.name = weaponName;
             }
+
             var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
             if (animatorOverride != null)
             {
-                //Change animator controller when you spawn the sword, in order to swinging the sword.
                 animator.runtimeAnimatorController = animatorOverride;
             }
             else if (overrideController != null)
             {
                 animator.runtimeAnimatorController = overrideController.runtimeAnimatorController;
             }
+
             return weapon;
         }
 
@@ -55,18 +57,7 @@ namespace AI.Combat
             oldWeapon.name = "DESTROYING";
             Destroy(oldWeapon.gameObject);
         }
-        public float GetDamage()
-        {
-            return weaponDamage;
-        }
-        public float GetPercentageBonus()
-        {
-            return percentageBonus;
-        }
-        public float GetRange()
-        {
-            return weaponRange;
-        }
+
         private Transform GetTransform(Transform rightHand, Transform leftHand)
         {
             Transform handTransform;
@@ -74,6 +65,7 @@ namespace AI.Combat
             else handTransform = leftHand;
             return handTransform;
         }
+
         public bool HasProjectile()
         {
             return projectile != null;
@@ -83,6 +75,21 @@ namespace AI.Combat
         {
             Projectile projectileInstance = Instantiate(projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
             projectileInstance.SetTarget(target, instigator, calculatedDamage);
+        }
+
+        public float GetDamage()
+        {
+            return weaponDamage;
+        }
+
+        public float GetPercentageBonus()
+        {
+            return percentageBonus;
+        }
+
+        public float GetRange()
+        {
+            return weaponRange;
         }
 
         public IEnumerable<float> GetAdditiveModifiers(Stat stat)

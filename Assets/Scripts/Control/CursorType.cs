@@ -7,6 +7,7 @@ namespace AI.Controller
         Combat,
         UI,
         Pickup,
-        Shop
+        Shop,
+        FullPickup
     }
 }
