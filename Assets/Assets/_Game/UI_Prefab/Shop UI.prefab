@@ -459,6 +459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+--- !u!224 &5528906038831149095 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6889167553460975288, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+  m_PrefabInstance: {fileID: 1378563126495725215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4011918580396477225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -865,8 +870,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopName: {fileID: 981042156218136744}
-  listRoot: {fileID: 0}
-  rowPrefab: {fileID: 0}
+  listRoot: {fileID: 5528906038831149095}
+  rowPrefab: {fileID: 2379707571809052456, guid: 2c5151f829c0cbe45a022f3a9bd85e93, type: 3}
   totalField: {fileID: 0}
   confirmButton: {fileID: 0}
   switchButton: {fileID: 0}

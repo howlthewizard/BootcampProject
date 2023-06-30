@@ -355,3 +355,20 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &2379707571809052456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8424151284575409304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cec38938ff32354d8826499a73deb0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconField: {fileID: 0}
+  nameField: {fileID: 0}
+  availabilityField: {fileID: 0}
+  priceField: {fileID: 0}
+  quantityField: {fileID: 0}
