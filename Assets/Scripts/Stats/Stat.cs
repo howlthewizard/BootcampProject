@@ -7,7 +7,6 @@ namespace AI.Stats
         Mana,
         ManaRegenRate,
         TotalTraitPoints,
-        BuyingDiscountPercentage,
         Defence
     }
 }
