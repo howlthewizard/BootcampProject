@@ -95,7 +95,23 @@ MonoBehaviour:
   shopName: Barbarian's Blacksmith
   sellingPercentage: 80
   maximumBarterDiscount: 80
-  stockConfig: []
+  stockConfig:
+  - item: {fileID: 11400000, guid: 0842a68efe5270d448c3d5eb432bb4bd, type: 2}
+    initialStock: 5
+    buyingDiscountPercentage: 0
+    levelToUnlock: 1
+  - item: {fileID: 11400000, guid: 08d9e69768db72d4e968aa1335c4679a, type: 2}
+    initialStock: 3
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 0bfa7a6e92f9c5742bb4c43210a64c38, type: 2}
+    initialStock: 8
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 322c0707f81ba5943addb7429088e5f4, type: 2}
+    initialStock: 6
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
 --- !u!1001 &2111688800323049870
 PrefabInstance:
   m_ObjectHideFlags: 0

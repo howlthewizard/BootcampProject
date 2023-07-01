@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9186015207124337445, guid: 54156bb062b367a4887b33d4389fd4ed, type: 3}
       propertyPath: m_Name
-      value: Exit Button
+      value: Quit Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54156bb062b367a4887b33d4389fd4ed, type: 3}
@@ -349,6 +349,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 50597072408712233}
     m_Modifications:
+    - target: {fileID: 931071441009931994, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -445
+      objectReference: {fileID: 0}
+    - target: {fileID: 931071441009931994, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867298312162259184, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 129.2984
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867298312162259184, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867298312162259184, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
     - target: {fileID: 5460319280194028559, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -442,6 +462,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5654906697351517336, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1215.3224
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654906697351517336, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -454,7 +478,23 @@ PrefabInstance:
       value: ScrollView
       objectReference: {fileID: 0}
     - target: {fileID: 6889167553460975288, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1221.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889167553460975288, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889167553460975288, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 610.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090104456731856674, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -245.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090104456731856674, guid: ce8c2099031d7ea40856dd077ad96a7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
