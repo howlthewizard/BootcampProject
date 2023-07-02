@@ -14,6 +14,7 @@ namespace AI.Shops
         [SerializeField] string shopName;
         [Range(0, 100)]
         [SerializeField] float sellingPercentage = 80f;
+        [SerializeField] float maximumBarterDiscount = 80;
 
         // Stock Config
         // Item: 
@@ -154,6 +155,7 @@ namespace AI.Shops
             Purse shopperPurse = currentShopper.GetComponent<Purse>();
             if (shopperInventory == null || shopperPurse == null) return;
 
+            // Transfer to or from the inventory
             foreach (ShopItem shopItem in GetAllItems())
             {
                 InventoryItem item = shopItem.GetInventoryItem();
@@ -171,6 +173,8 @@ namespace AI.Shops
                     }
                 }
             }
+            // Removal from transaction
+            // Debting or Crediting of funds
 
             if (onChange != null)
             {
@@ -301,6 +305,7 @@ namespace AI.Shops
 
             return prices;
         }
+
 
         private IEnumerable<StockItemConfig> GetAvailableConfigs()
         {
