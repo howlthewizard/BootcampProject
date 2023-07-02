@@ -182,6 +182,24 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6772743644528628095, guid: 8780c8eb7d661c645813ebb4cc35e4aa, type: 3}
   m_PrefabInstance: {fileID: 4917388536370224767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1856482107577405185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6772743644528628094, guid: 8780c8eb7d661c645813ebb4cc35e4aa, type: 3}
+  m_PrefabInstance: {fileID: 4917388536370224767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3503050208469992538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856482107577405185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9278985e653ba49bb6ee01eeb8c164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balanceField: {fileID: 5185266310338907357}
 --- !u!1001 &7636235803803771369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,7 +303,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6027917345595253661, guid: 83d796aea9352a54293589414242c526, type: 3}
       propertyPath: m_Name
-      value: Heading Text
+      value: Balance
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83d796aea9352a54293589414242c526, type: 3}
+--- !u!114 &5185266310338907357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3318194416570264884, guid: 83d796aea9352a54293589414242c526, type: 3}
+  m_PrefabInstance: {fileID: 7636235803803771369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
