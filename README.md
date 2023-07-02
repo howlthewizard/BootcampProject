@@ -23,15 +23,13 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 - Sanat Tarzı: <br/>
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
-## Product Backlog
-[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
+
 # Sprint 1
 - **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler ve görevler product backlog'ların içine yazılmıştır.
 
 - **Sprint Notları 2:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplantı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 150 Puan
-
 
 -	**Puan tamamlama mantığı:** Proje boyunca toplam tamamlanması gereken 350 puanlık bir backlog bulunmaktadır. Projede üç sprint bulunmaktadır ve ilkine 150 puan ayrılmasına karar verilmiştir.
 
@@ -40,6 +38,9 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 -	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint1)](https://github.com/howlthewizard/BootcampProject/files/11782226/Daily.Scrum.Chats.pdf) <br/>
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
+
+## Product Backlog
+[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 
 -	**Sprint board update:** Sprint board screenshotları:
 
@@ -113,6 +114,9 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 -	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint2)](https://github.com/howlthewizard/BootcampProject/files/11931531/Daily.Scrum.Chats.Sprint2.pdf) <br/>
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
+
+## Product Backlog
+[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 
 -	**Sprint board update:** Sprint board screenshotları:
 
