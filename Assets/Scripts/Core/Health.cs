@@ -1,26 +1,33 @@
-using AI.Core;
-using AI.Stats;
-using AI.Utils;
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using AI.Core;
+using AI.Saving;
+using AI.Stats;
+using AI.Utils;
 
 namespace Attributes
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float regenerationPercentage = 80f;
-        [SerializeField] UnityEvent<float> takeDamage;//When we take damage DamageText shows and slowly fades away by EVENT. Also, DamageTaken sFX played.
-        [SerializeField] UnityEvent onDie;
+        [SerializeField] float regenerationPercentage = 70;
+        [SerializeField] TakeDamageEvent takeDamage;
+        public UnityEvent onDie;
 
-        [SerializeField] PlayerHealthBar playerHealthBar;
+        [System.Serializable]
+        public class TakeDamageEvent : UnityEvent<float>
+        {
+        }
 
         LazyValue<float> _health;
 
-        bool isDead = false;
+        bool wasDeadLastFrame = false;
+
         private void Awake()
         {
             _health = new LazyValue<float>(GetInitialHealth);
         }
+
         private float GetInitialHealth()
         {
             return GetComponent<BaseStats>().GetStat(Stat.Health);
@@ -31,41 +38,37 @@ namespace Attributes
             _health.ForceInit();
         }
 
-        public bool IsDead() { return isDead; }
+        public bool IsDead()
+        {
+            return _health.value <= 0;
+        }
 
         public void TakeDamage(GameObject instigator, float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
-           
 
-            if (_health.value == 0)
+            if (IsDead())
             {
-                onDie.Invoke();//Invoke die SFX when health equals 0;
-                gameObject.GetComponent<CapsuleCollider>().isTrigger = true;
-                Die();
+                onDie.Invoke();
             }
             else
-            {//give "damage" paramater to it in order to see the real damage that has been given.
-                takeDamage.Invoke(damage);//Assigned DamageTextSpawner script as an EVENT in the inspector. Called it everytime when character took damage.
-            }
-            if (this.gameObject.tag == "Player")
             {
-                playerHealthBar.SetHealth(_health.value);
-
+                takeDamage.Invoke(damage);
             }
+            UpdateState();
         }
+
         public void Heal(float healthToRestore)
         {
             _health.value = Mathf.Min(_health.value + healthToRestore, GetMaxHealthPoints());
-            if (this.gameObject.tag == "Player")
-            {
-                playerHealthBar.SetHealth(_health.value);
-            }
+            UpdateState();
         }
+
         public float GetHealthPoints()
         {
             return _health.value;
         }
+
         public float GetMaxHealthPoints()
         {
             return GetComponent<BaseStats>().GetStat(Stat.Health);
@@ -75,26 +78,45 @@ namespace Attributes
         {
             return 100 * GetFraction();
         }
+
         public float GetFraction()
         {
             return _health.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
-        private void Die()
+
+        private void UpdateState()
         {
-            if (isDead) return;
+            Animator animator = GetComponent<Animator>();
+            if (!wasDeadLastFrame && IsDead())
+            {
+                animator.SetTrigger("die");
+                GetComponent<ActionScheduler>().CancelCurrentAction();
+            }
 
-            isDead = true;
-            GetComponent<Animator>().SetTrigger("die");
+            if (wasDeadLastFrame && !IsDead())
+            {
+                animator.Rebind();
+            }
 
-            //GO is no longer available to move or attack due to that method down below.
-            GetComponent<ActionScheduler>().CancelCurrentAction();
-
-
+            wasDeadLastFrame = IsDead();
         }
+
         private void RegenerateHealth()
         {
             float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenerationPercentage / 100);
             _health.value = Mathf.Max(_health.value, regenHealthPoints);
+        }
+
+        public object CaptureState()
+        {
+            return _health.value;
+        }
+
+        public void RestoreState(object state)
+        {
+            _health.value = (float)state;
+
+            UpdateState();
         }
     }
 }

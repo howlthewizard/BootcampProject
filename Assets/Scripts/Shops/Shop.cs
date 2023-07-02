@@ -155,6 +155,7 @@ namespace AI.Shops
             Purse shopperPurse = currentShopper.GetComponent<Purse>();
             if (shopperInventory == null || shopperPurse == null) return;
 
+            // Transfer to or from the inventory
             foreach (ShopItem shopItem in GetAllItems())
             {
                 InventoryItem item = shopItem.GetInventoryItem();
@@ -172,6 +173,8 @@ namespace AI.Shops
                     }
                 }
             }
+            // Removal from transaction
+            // Debting or Crediting of funds
 
             if (onChange != null)
             {
@@ -289,7 +292,7 @@ namespace AI.Shops
                 {
                     if (!prices.ContainsKey(config.item))
                     {
-                        prices[config.item] = config.item.GetPrice() * GetBarterDiscount();
+                        prices[config.item] = config.item.GetPrice();
                     }
 
                     prices[config.item] *= (1 - config.buyingDiscountPercentage / 100);
@@ -303,12 +306,6 @@ namespace AI.Shops
             return prices;
         }
 
-        private float GetBarterDiscount()
-        {
-            BaseStats baseStats = currentShopper.GetComponent<BaseStats>();
-           float discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
-            return (1 - Mathf.Min(discount, maximumBarterDiscount) / 100);
-        }
 
         private IEnumerable<StockItemConfig> GetAvailableConfigs()
         {
