@@ -7,13 +7,11 @@ public class Dash : MonoBehaviour
     public float dashForce = 10f; // Dash hýzý
     private bool isDashing = false;
     private Rigidbody rb;
-    private PlayerMovingScript playerMovement;
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        playerMovement = GetComponent<PlayerMovingScript>();
     }
     private void Update()
     {

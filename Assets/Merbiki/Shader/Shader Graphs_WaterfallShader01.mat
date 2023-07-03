@@ -83,17 +83,20 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
-    - _VertexOffsetAmount: -0.2
+    - _VertexOffsetAmount: 2
     - _VoronaiSpeed: 3
     - _VoronoiScale: 12
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
+    - _Alpha_Smoothstep: {r: 0, g: 0.1, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Remap_Amount: {r: 0.12, g: 1, b: 0, a: 0}
     - _RippleSpeed: {r: 0, g: 0.4, b: 0, a: 0}
-    - _RipplesColor: {r: 1.5625676, g: 5.328757, b: 8.213496, a: 1}
+    - _RipplesColor: {r: 0.6679244, g: 1.0137181, b: 2, a: 1}
+    - _RipplesColor_2: {r: 3.1821916, g: 10.664642, b: 16.426989, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1947486996739857125
 MonoBehaviour:

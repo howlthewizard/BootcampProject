@@ -23,8 +23,7 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 - Sanat Tarzı: <br/>
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
-## Product Backlog
-[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
+
 # Sprint 1
 - **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler ve görevler product backlog'ların içine yazılmıştır.
 
@@ -32,14 +31,16 @@ Korkusuz X! Sen ki krallığından sona kalan nadide askerlerinden biri. Y’yi 
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 150 Puan
 
-
 -	**Puan tamamlama mantığı:** Proje boyunca toplam tamamlanması gereken 350 puanlık bir backlog bulunmaktadır. Projede üç sprint bulunmaktadır ve ilkine 150 puan ayrılmasına karar verilmiştir.
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats.pdf](https://github.com/howlthewizard/BootcampProject/files/11782226/Daily.Scrum.Chats.pdf) <br/>
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint1)](https://github.com/howlthewizard/BootcampProject/files/11782226/Daily.Scrum.Chats.pdf) <br/>
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
+
+## Product Backlog
+[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
 
 -	**Sprint board update:** Sprint board screenshotları:
 
@@ -95,5 +96,76 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 - Product Backlog daha iyi düzenlenmeli
 
 ![Ekran görüntüsü 2023-06-18 201050](https://github.com/howlthewizard/BootcampProject/assets/117678371/cf98164c-5445-49e8-99a8-e6ab77ab0bd1)
+
+- **Jüriye Özel Notlar:** Sprint Review ve Sprint Retrospective toplantısı çizelgesi Miro'da tarafımızdan paylaşılmaktadır. [Miro Sprint Review ve Sprint Retrospective toplantısı](https://miro.com/app/board/uXjVM9qn4-Q=/?share_link_id=494475938040)
+
+# Sprint 2
+- **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımına devam edilmektedir. User Story'ler ve görevler product backlog'ların içine yazılmıştır.
+
+- **Sprint Notları 2:** Günlük olarak yaşanan önemli olaylardan, alınan kararlardan, discord’da yaptığımız toplantılara kadar her gün tutmuş olduğumuz notlar Miro’da tarafımızdan paylaşılmaktadır. [Miro Günlük Toplantı Notları](https://miro.com/app/board/uXjVMCbI9kE=/?share_link_id=135888595427)
+
+- **Sprint içinde tamamlanması tahmin edilen puan:** 150 Puan
+
+
+-	**Puan tamamlama mantığı:** Proje boyunca toplam tamamlanması gereken 350 puanlık bir backlog bulunmaktadır. 1. sprintte tamamlanması gereken 150 puanın 120 puanı tamamlanmış olup 30 puanlık kısmı 2. sprinte aktarılmıştır. 2. sprintte 150 (120+30) puanın tamamlanmasına karar verilmiştir.
+
+-	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
+
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint2)](https://github.com/howlthewizard/BootcampProject/files/11931531/Daily.Scrum.Chats.Sprint2.pdf) <br/>
+
+Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
+
+## Product Backlog
+[Miro Backlog Board](https://miro.com/app/board/uXjVMBtaSXg=/?share_link_id=323993331441)
+
+-	**Sprint board update:** Sprint board screenshotları:
+
+ ![Ekran görüntüsü 2023-07-03 002141](https://github.com/howlthewizard/BootcampProject/assets/117678371/dbc5ef28-5885-4211-86fc-0e3b04ec65c0)
+
+![Ekran görüntüsü 2023-07-03 002315](https://github.com/howlthewizard/BootcampProject/assets/117678371/14af5a16-62d3-4b17-97ca-2ed3cb35971e)
+
+![Ekran görüntüsü 2023-07-03 002336](https://github.com/howlthewizard/BootcampProject/assets/117678371/06ddf96f-21ea-4328-8715-f8093b8d5278)
+
+![Ekran görüntüsü 2023-07-03 003540](https://github.com/howlthewizard/BootcampProject/assets/117678371/186e02e4-fc5f-480a-858f-8b7bd5814383)
+
+-	**Ürün Durumu:** Ekran görüntüleri:
+
+![Ekran görüntüsü 2023-07-02 140917](https://github.com/howlthewizard/BootcampProject/assets/117678371/f4e52b98-6bbb-4140-93e8-3c4666f00a65)
+
+![Ekran görüntüsü 2023-07-02 140651](https://github.com/howlthewizard/BootcampProject/assets/117678371/ca3e2973-292e-4319-a76e-541fbc61477a)
+
+![Ekran görüntüsü 2023-07-02 140641](https://github.com/howlthewizard/BootcampProject/assets/117678371/7d1eede5-c18b-4f01-b1fc-4a1def073c38)
+
+![Ekran görüntüsü 2023-07-02 140451](https://github.com/howlthewizard/BootcampProject/assets/117678371/21b320b1-4761-487b-abd8-3eef6ef71146)
+
+![Ekran görüntüsü 2023-07-02 140534](https://github.com/howlthewizard/BootcampProject/assets/117678371/3ece8749-c586-41df-acee-c540477b4d79)
+
+- **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu.
+  * **Ahmet Alper Akın:** Ses efekleri, inventory sistemi ve ateş efektiyle ilgilendi.
+  * **Aybala Kılınç:** Ana menu, pause menu ve diyalog sistemiyile ilgilendi.
+  * **Merve İnce:** Base için karakter atamaları yaptı. Şelale efektini tamamladı.
+  * **Muhammet Mustafa Özdemir:** Giriş ekranı, 1. seviye, 2. seviye ve 3. seviye için tasarım yaptı.
+  * **Ömer Faruk İlhan:** Inventory sistemiyle yakından ilgilendi, menzilli saldırı kodlaması yaptı ve diyalog sistemine baktı.
+  
+- **Toplantı Katılımcıları:** Ahmet Alper Akın, Aybala Kılınç, Merve İnce, Muhammet Mustafa Özdemir, Ömer Faruk İlhan
+
+-	**Sprint Retrospective:** Biraz 2. Sprint hakkında düşündük. Nelerin iyi gittiği, hangi sorunlar ile karşılaştiğımız ve nelerin geliştirilmesi gerektiği hakkında konuştuk.
+
+*Neler iyi gitti?* <br/>
+- Elimizde güzel olan ve hızlı biten seviyelerimiz var
+- Her gün discord toplantısına devam edilmesi
+- Takım içi yardımlaşma ortamının olması
+- Kodlama kısmının hızlı ilerlemesi
+
+*Hangi sorunlar ile karşılaştık?* <br/>
+- Bayramın takımı yavaşlatması
+- Conflictler yaşanıp duraklanması
+- Karakter hareket kodunda bir sorun çıkması
+
+*Neler geliştirilmeli?* <br/>
+- Daha planlı bir çalışmanın izlenmesi
+- Projedeki güncellemelerinin sürekli olması
+
+![Ekran görüntüsü 2023-07-03 004106](https://github.com/howlthewizard/BootcampProject/assets/117678371/801256a9-8994-4fa3-8781-32785c9eeb37)
 
 - **Jüriye Özel Notlar:** Sprint Review ve Sprint Retrospective toplantısı çizelgesi Miro'da tarafımızdan paylaşılmaktadır. [Miro Sprint Review ve Sprint Retrospective toplantısı](https://miro.com/app/board/uXjVM9qn4-Q=/?share_link_id=494475938040)
