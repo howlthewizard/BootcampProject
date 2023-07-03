@@ -25,7 +25,6 @@ namespace AI.Movement
         {
             navMeshAgent.enabled = !health.IsDead();
 
-            UpdateAnimator();
         }
 
         public void StartMoveAction(Vector3 destination, float speedFraction)
@@ -57,13 +56,7 @@ namespace AI.Movement
             navMeshAgent.isStopped = true;
         }
 
-        private void UpdateAnimator()
-        {
-            Vector3 velocity = navMeshAgent.velocity;
-            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-            float speed = localVelocity.z;
-            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
-        }
+     
 
         private float GetPathLength(NavMeshPath path)
         {
