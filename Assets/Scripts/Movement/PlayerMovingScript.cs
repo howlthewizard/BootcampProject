@@ -4,69 +4,35 @@ using UnityEngine;
 
 public class PlayerMovingScript : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rb;
-    [SerializeField] private float _speed = 5;
-    [SerializeField] private float _turnSpeed = 360;
-    [SerializeField] private Transform _model;
-    [SerializeField] private Animator _animator;
-    public bool isMoving = false;
-    private Vector3 _input;
-    public Vector3 lastMovePosition;
-    Animator animator;
-    public float acceleration = 0.1f;
+    public float speed = 5f;
+    Vector3 forward;
+    Vector3 right;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();    
-    }
-
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
-    private void Update()
-    {
-        isMoving = false;
-        //_animator.SetFloat("RunSpeed", 0f);
-        GatherInput();
-        Look();
-
-      /* float velocityX = Vector3.Dot(_input.normalized,transform.right);
-       float velocityZ = Vector3.Dot(_input.normalized, transform.forward);
-
-        animator.SetFloat("VelocityX",velocityX, 0.1f, Time.deltaTime);
-        animator.SetFloat("VelocityZ",velocityZ, 0.1f, Time.deltaTime);*/
+        forward = Camera.main.transform.forward;
+        forward.y = 0;
+        forward = Vector3.Normalize(forward);
+        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
 
     private void FixedUpdate()
     {
-        Move();
+        if (Input.anyKey)
+        {
+            Move();
+        }
     }
 
-    private void GatherInput()
+    void Move()
     {
-        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector3 rightMovement = right * speed * Time.deltaTime * Input.GetAxis("Horizontal");
+        Vector3 upMovement = forward * speed * Time.deltaTime * Input.GetAxis("Vertical");
+        Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
+        transform.forward += heading;
+        transform.position += rightMovement;
+        transform.position += upMovement;
     }
-
-    private void Look()
-    {
-        if (_input == Vector3.zero) return;
-
-        Quaternion rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
-        _model.rotation = Quaternion.RotateTowards(_model.rotation, rot, _turnSpeed * Time.deltaTime);
-    }
-
-    private void Move()
-    {
-        _rb.MovePosition(transform.position + _input.ToIso() * _input.normalized.magnitude * _speed * Time.deltaTime);
-        lastMovePosition = _rb.position;
-        isMoving = true;
-    }
-}
-
-public static class Helpers
-{
-    private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
-    public static Vector3 ToIso(this Vector3 input) => _isoMatrix.MultiplyPoint3x4(input);
-}
+}  
 
