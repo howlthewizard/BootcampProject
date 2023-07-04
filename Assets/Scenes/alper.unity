@@ -153,9 +153,8 @@ MonoBehaviour:
   rb: {fileID: 40405069}
   navMeshAgent: {fileID: 0}
   isGrounded: 1
-  isJumping: 0
-  fallMultiplier: 1
-  lowJumpMultiplier: 1
+  fallMultiplier: 10
+  lowJumpMultiplier: 8
   jumpForce: 50
 --- !u!1001 &59069718
 PrefabInstance:
@@ -1152,7 +1151,6 @@ MonoBehaviour:
   rb: {fileID: 986652250}
   navMeshAgent: {fileID: 0}
   isGrounded: 1
-  isJumping: 0
   fallMultiplier: 10
   lowJumpMultiplier: 8
   jumpForce: 50

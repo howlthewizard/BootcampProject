@@ -38,12 +38,12 @@ public class Jump : MonoBehaviour
             rb.velocity += Vector3.up * Physics.gravity.y * lowJumpMultiplier * Time.deltaTime;
         }
 
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Ground" && isJumping)
+        if (collision.gameObject.tag == "Ground" && isJumping)
         {
             isGrounded = true;
             isJumping = false;
