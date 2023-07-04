@@ -145,15 +145,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40405058}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54437889cc4ce0748bb7225bc16fe1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 40405069}
+  navMeshAgent: {fileID: 0}
   isGrounded: 1
-  fallMultiplier: 10
-  lowJumpMultiplier: 8
+  isJumping: 0
+  fallMultiplier: 1
+  lowJumpMultiplier: 1
   jumpForce: 50
 --- !u!1001 &59069718
 PrefabInstance:
@@ -1148,7 +1150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 986652250}
+  navMeshAgent: {fileID: 0}
   isGrounded: 1
+  isJumping: 0
   fallMultiplier: 10
   lowJumpMultiplier: 8
   jumpForce: 50
