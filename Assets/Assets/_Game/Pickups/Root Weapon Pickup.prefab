@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1756245266514063099}
   - component: {fileID: 1756245266514063096}
   - component: {fileID: 1756245266514063097}
-  - component: {fileID: 1756245266514063098}
+  - component: {fileID: 2803261380262779576}
   m_Layer: 0
   m_Name: Root Weapon Pickup
   m_TagString: Untagged
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb33c4d06cd54f94c8882b89c61f4029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1756245266514063098
+--- !u!114 &2803261380262779576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,6 +68,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1756245266514063102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2727038862caa4d489daf145e59ec3e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 97955a6d10610ba4a878863cb1ba2138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

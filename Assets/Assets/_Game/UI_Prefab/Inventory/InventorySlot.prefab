@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2ee54f6572bf241914858a9b15751b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tooltipPrefab: {fileID: 0}
+  tooltipPrefab: {fileID: 6796662661069912602, guid: 02daa63219e2d0249bec827de43b7579, type: 3}
 --- !u!1001 &3738852935408870244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,11 +182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1847210799765944866, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.324
+      value: -3.3240051
       objectReference: {fileID: 0}
     - target: {fileID: 1847210799765944866, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.7652
+      value: 4.7651978
       objectReference: {fileID: 0}
     - target: {fileID: 1847210799765944866, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -236,6 +236,26 @@ PrefabInstance:
     - target: {fileID: 5371029169770507733, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
       propertyPath: m_Name
       value: Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371029169770507733, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212000986127469798, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212000986127469798, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212000986127469798, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212000986127469798, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8388795606573733627, guid: 1023d9984eef2c64db225d47043f19c2, type: 3}
       propertyPath: m_Pivot.x

@@ -22,6 +22,8 @@ namespace AI.Controller
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius = 1f;
 
+        bool isDraggingUI = false;
+
         private void Awake()
         {
             health = GetComponent<Health>();
@@ -43,12 +45,24 @@ namespace AI.Controller
 
         private bool InteractWithUI()
         {
-            if (EventSystem.current.IsPointerOverGameObject())//check if you hover 
-            {//if you hover over to UI then set Cursor type and return true.
+            if (Input.GetMouseButtonUp(0))
+            {
+                isDraggingUI = false;
+            }
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    isDraggingUI = true;
+                }
                 SetCursor(CursorType.UI);
                 return true;
             }
-            return false;//If you dont hover UI return false.
+            if (isDraggingUI)
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool InteractWithComponent()
