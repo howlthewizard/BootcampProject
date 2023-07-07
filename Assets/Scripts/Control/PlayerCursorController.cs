@@ -4,12 +4,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.AI;
 using Attributes;
 using AI.Movement;
+using AI.Inventories;
 
 namespace AI.Controller
 {
     public class PlayerCursorController : MonoBehaviour
     {
         Health health;
+        ActionStore actionStore;
 
         [System.Serializable]
         struct CursorMapping
@@ -22,11 +24,13 @@ namespace AI.Controller
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius = 1f;
 
+        [SerializeField] int numberOfAbilities = 6;
         bool isDraggingUI = false;
 
         private void Awake()
         {
             health = GetComponent<Health>();
+            actionStore = GetComponent<ActionStore>();
 
 
         }
@@ -38,10 +42,14 @@ namespace AI.Controller
                 SetCursor(CursorType.None);
                 return;
             }
-
+            UseAbilities();
             if (InteractWithComponent()) return;
             if (InteractWithMovement()) return;
+
+            SetCursor(CursorType.None);
         }
+
+      
 
         private bool InteractWithUI()
         {
@@ -81,6 +89,16 @@ namespace AI.Controller
                 }
             }
             return false;
+        }
+        private void UseAbilities()
+        {
+            for (int i = 0; i < numberOfAbilities; i++)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                {
+                    actionStore.Use(i, gameObject);
+                }
+            }
         }
         RaycastHit[] RaycastAllSorted()
         {
