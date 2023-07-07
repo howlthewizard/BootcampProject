@@ -5,11 +5,12 @@ using UnityEngine;
 public class ShopInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
+    [SerializeField] private GameObject shopPanel;
     public string InteractionPrompt => _prompt;
 
     public bool Interact(Interactor interactor)
     {
-        Debug.Log("Interaction with shop!");
+        shopPanel.SetActive(true);
         return true;
     }
 }
