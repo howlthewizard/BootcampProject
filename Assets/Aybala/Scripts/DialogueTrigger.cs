@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-      public Message[] messages;
+      public Message[] mesagges;
       public Actor[] actors;
 
       public void StartDialogue()
       {
-        DialogueManager.instance.OpenDialogue(messages, actors);
-    }
+            FindObjectOfType<DialogueManager>().OpenDialogue(mesagges, actors);
+      }
      
 }
 
