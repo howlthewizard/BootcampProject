@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Omer/Core/Characters/OldWiseMan.prefab.meta
 guid: 5bacbd3c31e7d5f418ee14c269fe10be
+========
+guid: 89201724ac788804ab5af70ad312e02a
+>>>>>>>> main:Assets/Assets/_Game/UI_Prefab/PauseMenu Canvas.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
