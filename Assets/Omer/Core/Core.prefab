@@ -183,7 +183,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5837637456245960895, guid: 642eafa44e036d749a320d07d00e4cb0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 642eafa44e036d749a320d07d00e4cb0, type: 3}
 --- !u!224 &6800726492732407175 stripped
 RectTransform:
@@ -415,6 +416,10 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2084769567292369290, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 8143492814734408880}
     - target: {fileID: 2084769567292369290, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
       propertyPath: playerHealthBar
       value: 
