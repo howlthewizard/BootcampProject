@@ -12,7 +12,6 @@ namespace Attributes
     {
         [SerializeField] float regenerationPercentage = 70;
         [SerializeField] TakeDamageEvent takeDamage;
-        [SerializeField] PlayerHealthBar healthBar;
         public UnityEvent onDie;
 
         [System.Serializable]
@@ -47,7 +46,6 @@ namespace Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
-            healthBar.SetHealth(_health.value);
 
             if (IsDead())
             {
@@ -63,7 +61,6 @@ namespace Attributes
         public void Heal(float healthToRestore)
         {
             _health.value = Mathf.Min(_health.value + healthToRestore, GetMaxHealthPoints());
-            healthBar.SetHealth(_health.value);
             UpdateState();
         }
 
