@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using TMPro;
+using TMPro.EditorUtilities;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Vector3 = UnityEngine.Vector3;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -12,44 +15,35 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text messageText;
     public RectTransform backgroundBox;
 
-
-    Message[] currentMessages;
-    Actor[] currentActors;
-    int activeMessage = 0;
+    public Message[] currentMessages;
+    public Actor[] currentActors;
+    public int activeMessage = 0;
     public static bool isActive = false;
-    public static bool isPlayed = false;
-
-    public static DialogueManager instance { get; private set; } //Singleton methot ile class dýþarýsýndan ulaþabilmeyi ayarladýk
-    private void Awake()
-    {
-        instance = this; //Singleton ile instance'ý bu scripte eþitledik
-    }
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
-    { //Parametre olarak gönderilen verileri, scriptteki deðiþkenlere atadýk
+    {
         currentMessages = messages;
         currentActors = actors;
         activeMessage = 0;
-
         isActive = true;
-
-        Debug.Log("Loaded messages: " + messages.Length);
-
-        //Mesajlarý göster fonksiyonu çaðýrýldý.
+        
+        Debug.Log("Started Conversation! Loaded messages: " + messages.Length);
         DisplayMessage();
-        backgroundBox.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo(); //Scale'ini (1,1,1) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
+        backgroundBox.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
     }
+
     void DisplayMessage()
     {
-        Message messageToDisplay = currentMessages[activeMessage]; //Message classýndan oluþturulan objeyi currentMessages[] arrayindeki "activeMessage" indexine ulaþtýk.
+        Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.message;
 
-        Actor actorToDisplay = currentActors[messageToDisplay.actorId];//Actor classýndan oluþturulan objeyi currentActors[] arrayindeki "actorId" indexine ulaþtýk.
+        Actor actorToDisplay = currentActors[messageToDisplay.actorId];
         actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
-
+        
         AnimateTextColor();
     }
+    
     public void NextMessage()
     {
         activeMessage++;
@@ -59,23 +53,24 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Conversation Ended");
-
-            //Scale'ini (0,0,0) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
+            Debug.Log("Conversation ended!");
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
         }
     }
+
     void AnimateTextColor()
     {
-        LeanTween.textAlpha(messageText.rectTransform, 0, 0); //Mesajlarýn renginin alfasýný 0 yap, 0 saniye içerisinde. 
-        LeanTween.textAlpha(messageText.rectTransform, 1, 0.5f);//Mesajlarýn renginin alfasýný 1 yap, 0.5 saniye içerisinde. 
+        LeanTween.textAlpha(messageText.rectTransform, 0, 0);
+        LeanTween.textAlpha(messageText.rectTransform, 1, 0.5f);
     }
+
     private void Start()
     {
         backgroundBox.transform.localScale = Vector3.zero;
     }
-    private void Update()
+
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isActive == true)
         {
