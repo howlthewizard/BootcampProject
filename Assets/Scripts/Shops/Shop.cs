@@ -234,10 +234,11 @@ namespace AI.Shops
 
         public bool HandleRaycast(PlayerCursorController callingController)
         {
-            if (Input.GetMouseButtonDown(0))
+            //Sol týk ile interaction saðlamaktan vazgeçildi
+            /*if (Input.GetMouseButtonDown(0))
             {
                 callingController.GetComponent<Shopper>().SetActiveShop(this);
-            }
+            }*/
             return true;
         }
 
