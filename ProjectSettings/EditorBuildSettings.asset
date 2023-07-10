@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mustafa4.unity
     guid: abfd8819a6c148e45ba8d41bc60d0acc
+  - enabled: 1
+    path: Assets/Scenes/Omer.unity
+    guid: 551fb6e1475098c47812c369f1224f93
   m_configObjects: {}
