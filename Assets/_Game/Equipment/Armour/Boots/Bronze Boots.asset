@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c03531819a038c4aa4b09844ef3b3f8, type: 3}
+  m_Name: Bronze Boots
+  m_EditorClassIdentifier: 
+  itemID: c79b5117-9dd4-4c73-b417-56909bdb380c
+  displayName: Bronze Boots
+  description: +5 Mana points
+  icon: {fileID: -812239413, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
+  pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
+  stackable: 0
+  price: 55
+  category: 1
+  allowedEquipLocation: 4
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 2
+    value: 5
+  percentageModifiers: []
