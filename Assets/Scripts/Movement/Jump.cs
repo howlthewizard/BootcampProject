@@ -1,3 +1,4 @@
+using AI.Movement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class Jump : MonoBehaviour
 {
     public Rigidbody rb;
     public NavMeshAgent navMeshAgent;
+    public AIMover playerAIMover;
     public bool isGrounded = true;
     public bool isJumping = false;
     public float fallMultiplier = 5000f;
@@ -17,6 +19,7 @@ public class Jump : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        playerAIMover = GetComponent<AIMover>();
     }
 
     private void FixedUpdate()
@@ -27,6 +30,7 @@ public class Jump : MonoBehaviour
             isGrounded = false;
             isJumping = true;
             navMeshAgent.enabled = false;
+            playerAIMover.enabled = false;
         }
 
         if (rb.velocity.y < 0)
@@ -48,6 +52,7 @@ public class Jump : MonoBehaviour
             isGrounded = true;
             isJumping = false;
             navMeshAgent.enabled = true;
+            playerAIMover.enabled = true;
         }
     }
 
