@@ -6,16 +6,13 @@ using TMPro;
 public class CountdownMng : MonoBehaviour
 {
     public float countdownTime = 6f; 
-    public TextMeshProUGUI countdownText; 
+    public TextMeshProUGUI countdownText;
+    public GameObject Panel;
 
     private bool countdownActive = false; 
     private bool insideScene = true; 
 
     private Coroutine countdownCoroutine; 
-
-    private void Start()
-    {
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,6 +36,7 @@ public class CountdownMng : MonoBehaviour
     public void StartCountdown()
     {
         countdownActive = true;
+        Panel.SetActive(true);
         countdownText.gameObject.SetActive(true); 
         countdownCoroutine = StartCoroutine(UpdateCountdown());
     }
@@ -46,6 +44,7 @@ public class CountdownMng : MonoBehaviour
     public void StopCountdown()
     {
         countdownActive = false;
+        Panel.SetActive(false);
         countdownText.gameObject.SetActive(false); 
 
         if (countdownCoroutine != null)
