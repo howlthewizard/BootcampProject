@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
+  m_Name: Golden Sword
+  m_EditorClassIdentifier: 
+  itemID: cfdc0a64-5579-480f-b449-45a007ed5b95
+  displayName: Common Sword
+  description: 
+  icon: {fileID: 1754229641, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
+  pickup: {fileID: 3894105250079936546, guid: da7fabffbd4b05d42baa59b9446ef840, type: 3}
+  stackable: 0
+  price: 300
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  animatorOverride: {fileID: 22100000, guid: 9816d7f51fcd215478fe24928380fe02, type: 2}
+  equippedPrefab: {fileID: 8564486241643516296, guid: 28786e4f591e1a04ca9f9ea979c7806c, type: 3}
+  weaponDamage: 30
+  percentageBonus: 0
+  weaponRange: 2
+  isRightHanded: 1
+  projectile: {fileID: 0}
