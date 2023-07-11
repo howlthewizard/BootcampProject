@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c03531819a038c4aa4b09844ef3b3f8, type: 3}
+  m_Name: Golden Helmet
+  m_EditorClassIdentifier: 
+  itemID: c288c5e1-28ed-4870-af77-8b9f0e749944
+  displayName: Golden Helmet
+  description: +15 Defence and +25 HP
+  icon: {fileID: 582752319, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
+  pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
+  stackable: 0
+  price: 450
+  category: 1
+  allowedEquipLocation: 0
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 0
+    value: 35
+  - stat: 5
+    value: 20
+  percentageModifiers: []
