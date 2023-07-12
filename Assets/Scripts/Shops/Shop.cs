@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using AI.Controller;
 using AI.Inventories;
 using AI.Saving;
 using AI.Stats;
 using UnityEngine;
+using AI.Controller;
 
 namespace AI.Shops
 {
@@ -234,10 +234,10 @@ namespace AI.Shops
 
         public bool HandleRaycast(PlayerCursorController callingController)
         {
-            /*if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 callingController.GetComponent<Shopper>().SetActiveShop(this);
-            }*/
+            }
             return true;
         }
 
@@ -292,7 +292,7 @@ namespace AI.Shops
                 {
                     if (!prices.ContainsKey(config.item))
                     {
-                        prices[config.item] = config.item.GetPrice();
+                        prices[config.item] = config.item.GetPrice() * GetBarterDiscount();
                     }
 
                     prices[config.item] *= (1 - config.buyingDiscountPercentage / 100);
@@ -306,6 +306,12 @@ namespace AI.Shops
             return prices;
         }
 
+        private float GetBarterDiscount()
+        {
+            BaseStats baseStats = currentShopper.GetComponent<BaseStats>();
+            float discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
+            return (1 - Mathf.Min(discount, maximumBarterDiscount) / 100);
+        }
 
         private IEnumerable<StockItemConfig> GetAvailableConfigs()
         {
