@@ -24,15 +24,15 @@ MonoBehaviour:
     - stat: 5
       levels:
       - 10
+    - stat: 6
+      levels:
+      - 5
   - characterClass: 3
     stats:
     - stat: 0
       levels:
       - 50
     - stat: 1
-      levels:
-      - 10
-    - stat: 5
       levels:
       - 10
     - stat: 5
