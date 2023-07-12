@@ -1,8 +1,6 @@
+using System;
 using AI.Inventories;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 
 namespace AI.Shops
 {
