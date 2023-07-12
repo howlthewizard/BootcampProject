@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43b02e8c27947a458a7b37709369c40, type: 3}
+  m_Name: Ability Super Mega Splash
+  m_EditorClassIdentifier: 
+  itemID: 226ceb47-37a3-42f7-9cb8-ffec9a43e635
+  displayName: Super Mega Splash
+  description: 
+  icon: {fileID: 21300000, guid: db427fab3e94daf4caa704d9314a77a1, type: 3}
+  pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
+  stackable: 0
+  price: 50
+  category: 5
+  consumable: 0
+  targetingStrategy: {fileID: 11400000, guid: 9820985bec60ebf478161a150b32ef82, type: 2}
+  filterStrategies:
+  - {fileID: 11400000, guid: 14fd143613f3ab445923939ce763003f, type: 2}
+  effectStrategies:
+  - {fileID: 11400000, guid: f77a769fe8cbd8040b97c87316a06fb7, type: 2}

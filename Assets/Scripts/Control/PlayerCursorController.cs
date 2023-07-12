@@ -42,7 +42,9 @@ namespace AI.Controller
                 SetCursor(CursorType.None);
                 return;
             }
+
             UseAbilities();
+
             if (InteractWithComponent()) return;
             if (InteractWithMovement()) return;
 
@@ -167,7 +169,7 @@ namespace AI.Controller
             }
             return cursorMappings[0];
         }
-        private static Ray GetMouseRay()
+        public static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
