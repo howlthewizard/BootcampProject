@@ -31,7 +31,7 @@ namespace AI.UI.Shops
             iconField.sprite = item.GetIcon();
             nameField.text = item.GetName();
             availabilityField.text = $"{item.GetAvailability()}";
-            priceField.text = $"${item.GetPrice():N2}";
+            priceField.text = $"{item.GetPrice():N2}";
             quantityField.text = $"{item.GetQuantityInTransaction()}";
         }
 

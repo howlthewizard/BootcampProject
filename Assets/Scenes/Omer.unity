@@ -156,11 +156,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &347024767 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7336319063291092944, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
-  m_PrefabInstance: {fileID: 353990752}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &353990752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,21 +163,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 138501061}
     m_Modifications:
-    - target: {fileID: 576226194909639512, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
-      propertyPath: uniqueIdentifier
-      value: 45a09383-89c6-4ef9-a3b1-e1e104d85930
-      objectReference: {fileID: 0}
-    - target: {fileID: 3892403947843258793, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
+    - target: {fileID: 353990765, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
       propertyPath: shopPanel
       value: 
       objectReference: {fileID: 10014994924506243}
     - target: {fileID: 7336319063291092944, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
       propertyPath: m_Name
       value: MagicalShopkeeper
-      objectReference: {fileID: 0}
-    - target: {fileID: 7336319063291092944, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7336319063291092959, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
       propertyPath: m_RootOrder
@@ -228,41 +215,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3892403947843258793, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
 --- !u!4 &353990753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7336319063291092959, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
   m_PrefabInstance: {fileID: 353990752}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &353990765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347024767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a679b6f63839ee94ab1bf0a27e5019cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _prompt: Press 'E' for Shopping
-  shopPanel: {fileID: 10014994924506243}
---- !u!65 &353990766
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347024767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.8181801, y: 2.618538, z: 2.1250744}
-  m_Center: {x: -0.019101918, y: 0.8092566, z: 0.5625366}
 --- !u!1 &367678137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285194597633598925, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202.9583
+      value: -202.95859
       objectReference: {fileID: 0}
     - target: {fileID: 7285537748177697933, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
       propertyPath: m_AnchorMax.x
