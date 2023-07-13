@@ -2,7 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-namespace UI.Abilities
+namespace AI.Abilities
 {
     public abstract class TargetingStrategy : ScriptableObject
     {

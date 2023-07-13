@@ -4,7 +4,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-namespace UI.Abilities.Targeting
+namespace AI.Abilities.Targeting
 {
     [CreateAssetMenu(fileName = "Delayed Click Targeting", menuName = "Abilities/Targeting/Delayed Click", order = 0)]
     public class DelayedClickTargeting : TargetingStrategy
@@ -40,6 +40,7 @@ namespace UI.Abilities.Targeting
             {
                 Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
                 RaycastHit raycastHit;
+
                 if (Physics.Raycast(PlayerCursorController.GetMouseRay(),out raycastHit, 1000, layerMask))
                 {
                     targetingPrefabInstance.position = raycastHit.point;
@@ -53,6 +54,7 @@ namespace UI.Abilities.Targeting
                         yield return new WaitWhile(() => Input.GetMouseButton(0));
                         playerController.enabled = true;
                         targetingPrefabInstance.gameObject.SetActive(false);
+                        data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
                         finished();
                         yield break;
