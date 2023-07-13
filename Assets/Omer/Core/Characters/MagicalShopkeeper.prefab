@@ -750,13 +750,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: MagicalShopkeeper
       objectReference: {fileID: 0}
+    - target: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.692206
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -764,11 +768,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.55507
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.23116563
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -776,7 +780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.97291446
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -788,11 +792,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 206.731
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925276205093594747, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 45a09383-89c6-4ef9-a3b1-e1e104d85930
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1138497344972311294, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
@@ -818,7 +826,20 @@ MonoBehaviour:
   sellingPercentage: 80
   maximumBarterDiscount: 80
   stockConfig: []
---- !u!114 &3892403947843258793
+--- !u!65 &353990766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7336319063291092944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8181801, y: 2.618538, z: 2.1250744}
+  m_Center: {x: -0.019101918, y: 0.8092566, z: 0.5625366}
+--- !u!114 &353990765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -827,7 +848,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7336319063291092944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82d4cbc46a4d624e95c2b4ed4cfc749, type: 3}
+  m_Script: {fileID: 11500000, guid: a679b6f63839ee94ab1bf0a27e5019cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _prompt: Press 'E' for Shopping
