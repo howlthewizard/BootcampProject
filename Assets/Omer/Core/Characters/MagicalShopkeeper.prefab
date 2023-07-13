@@ -810,22 +810,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
   m_PrefabInstance: {fileID: 7638973703248188707}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5922734413158682706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7336319063291092944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd6bdefd7441e94ca5d3d81053eb7bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shopName: ...'s Magical Shop
-  sellingPercentage: 80
-  maximumBarterDiscount: 80
-  stockConfig: []
 --- !u!65 &353990766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -834,7 +818,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7336319063291092944}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.8181801, y: 2.618538, z: 2.1250744}
@@ -853,6 +837,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Press 'E' for Shopping
   shopPanel: {fileID: 0}
+  callingController: {fileID: 0}
+--- !u!114 &5922734413158682706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7336319063291092944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd6bdefd7441e94ca5d3d81053eb7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopName: ...'s Magical Shop
+  sellingPercentage: 80
+  maximumBarterDiscount: 80
+  stockConfig: []
 --- !u!4 &7336319063291092959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}

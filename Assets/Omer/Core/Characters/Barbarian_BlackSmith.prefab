@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barbarian_BlackSmith
       objectReference: {fileID: 0}
+    - target: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -80,6 +84,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
   m_PrefabInstance: {fileID: 1574233612569697995}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &6951422920306736158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879140606383395896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.02288, y: 2.5542593, z: 1.8436062}
+  m_Center: {x: -0.11885449, y: 0.77712965, z: 0.42180312}
 --- !u!114 &6085124111480164484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +133,21 @@ MonoBehaviour:
     initialStock: 6
     buyingDiscountPercentage: 0
     levelToUnlock: 0
+--- !u!114 &7807201733296921884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879140606383395896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82d4cbc46a4d624e95c2b4ed4cfc749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prompt: Press 'E' for Shopping
+  shopPanel: {fileID: 0}
+  callingController: {fileID: 0}
 --- !u!1001 &2111688800323049870
 PrefabInstance:
   m_ObjectHideFlags: 0

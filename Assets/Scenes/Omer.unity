@@ -347,6 +347,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bacbd3c31e7d5f418ee14c269fe10be, type: 3}
+--- !u!114 &1328280446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8227293120794777016, guid: f623f6eed0a274d43973531bce626187, type: 3}
+  m_PrefabInstance: {fileID: 9073314403784345562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea085bd2578c1b4884d0b8347b81d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1339786474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -449,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Press 'E' for Shopping
   shopPanel: {fileID: 1472120310}
+  callingController: {fileID: 1328280446}
 --- !u!1 &1417233056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: Press 'E' for Shopping
   shopPanel: {fileID: 0}
+  callingController: {fileID: 0}
 --- !u!1001 &10014994924506242
 PrefabInstance:
   m_ObjectHideFlags: 0
