@@ -825,7 +825,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_Name
-      value: 'OldWiseMan '
+      value: OldWiseMan
       objectReference: {fileID: 0}
     - target: {fileID: 1138497344972311283, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
       propertyPath: m_Layer
@@ -900,7 +900,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200801782902511224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.2001061, y: 2.6519377, z: 2.7561686}
