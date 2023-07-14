@@ -6,6 +6,10 @@ namespace AI.Stats
         Witch,
         Boss,
         Barbarian,
+        SkeletonArcher,
+        SkeletonMage,
+        SkeletonWarrior,
+        SkeletonMinion
 
     }
 }
