@@ -9,7 +9,8 @@ namespace AI.Stats
         SkeletonArcher,
         SkeletonMage,
         SkeletonWarrior,
-        SkeletonMinion
+        SkeletonMinion,
+        FlyingMage
 
     }
 }
