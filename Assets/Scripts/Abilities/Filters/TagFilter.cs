@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UI.Abilities.Filters
+namespace AI.Abilities.Filters
 {
     [CreateAssetMenu(fileName = "Tag Filter", menuName = "Abilities/Filters/Tag", order = 0)]
     public class TagFilter : FilterStrategy

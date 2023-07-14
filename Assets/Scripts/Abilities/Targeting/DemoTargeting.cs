@@ -4,7 +4,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-namespace UI.Abilities.Targeting
+namespace AI.Abilities.Targeting
 {
     [CreateAssetMenu(fileName = "Demo Targeting", menuName = "Abilities/Targeting/Demo", order = 0)]
     public class DemoTargeting : TargetingStrategy

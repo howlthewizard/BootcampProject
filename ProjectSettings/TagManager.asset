@@ -8,6 +8,7 @@ TagManager:
   - waterMill
   - Ground
   - InvisibleWall
+  - Enemy
   layers:
   - Default
   - TransparentFX
