@@ -748,7 +748,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8182009730388215268}
-  - component: {fileID: 2840780341665963934}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -763,33 +762,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8847188235703820126}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -1.3459849, y: 5.6891837, z: -35.56689}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5163225019553936372}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!95 &2840780341665963934
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8847188235703820126}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 03525955b0164c945bda4dd8f174ebc8, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6fb5e7a86467c53469c04bb1cfbf1efc, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
