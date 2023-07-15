@@ -5,6 +5,7 @@ using UnityEngine;
 public class CombatDoorMng : MonoBehaviour
 {
     public int totalEnemies;
+    public GameObject invisCol;
     public int killedEnemies = 0;
     private bool isDoorLocked = true;
     public GameObject door;
@@ -28,6 +29,7 @@ public class CombatDoorMng : MonoBehaviour
     private void OpenDoor()
     {
         isDoorLocked = false;
+        invisCol.gameObject.SetActive(false);
         doorAnimator.SetTrigger("Open");
     }
     

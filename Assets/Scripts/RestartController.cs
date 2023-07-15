@@ -21,6 +21,17 @@ public class RestartController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.CompareTag("Restart"))
+        {
+            StartCoroutine(ResetPanel());
+           
+            
+        }
+    }
+
+
     public void ResetGame()
     {
         //Level'ı yeniden yükleyip oyun zamanını normal zamana döndersin.
