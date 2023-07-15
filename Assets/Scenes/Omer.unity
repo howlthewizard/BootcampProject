@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: shopPanel
       value: 
       objectReference: {fileID: 10014994924506243}
+    - target: {fileID: 353990765, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
+      propertyPath: callingController
+      value: 
+      objectReference: {fileID: 1328280446}
     - target: {fileID: 7336319063291092944, guid: 36eddbe5cb65a4c4aa8d2645c369082e, type: 3}
       propertyPath: m_Name
       value: MagicalShopkeeper
@@ -424,6 +428,26 @@ PrefabInstance:
     - target: {fileID: 7472836315949908762, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2091476060}
+    - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472836315949908766, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AI.Controller.AIController, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
@@ -1114,6 +1138,107 @@ MonoBehaviour:
   _prompt: Press 'E' for Shopping
   shopPanel: {fileID: 0}
   callingController: {fileID: 0}
+--- !u!1 &2091476060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7472836315722187030, guid: dcaad0193a6397c4d9395af43ba94b79, type: 3}
+  m_PrefabInstance: {fileID: 1339786474}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2091476062
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091476060}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &10014994924506242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2239,7 +2364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285194597633598925, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202.95859
+      value: -202.95837
       objectReference: {fileID: 0}
     - target: {fileID: 7285537748177697933, guid: 68ebf26f6eee5214d8e673fd64a720f8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2840,6 +2965,18 @@ PrefabInstance:
     - target: {fileID: 6990841717888648032, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998183951093967040, guid: f623f6eed0a274d43973531bce626187, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3541396
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998183951093967040, guid: f623f6eed0a274d43973531bce626187, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8278756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998183951093967040, guid: f623f6eed0a274d43973531bce626187, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8694775
       objectReference: {fileID: 0}
     - target: {fileID: 6998183951093967043, guid: f623f6eed0a274d43973531bce626187, type: 3}
       propertyPath: m_Lens.NearClipPlane
