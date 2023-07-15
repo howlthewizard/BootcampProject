@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
-  m_Name: Dagger
+  m_Name: Bronze Dagger
   m_EditorClassIdentifier: 
   itemID: 45028039-39ba-4503-b896-050eaf514ced
   displayName: Rogue Dagger
-  description: 
+  description: Damage +8
   icon: {fileID: 0}
   pickup: {fileID: 3894105250079936546, guid: 842c60403ff0ff94cb5e213a747c9287, type: 3}
   stackable: 0
