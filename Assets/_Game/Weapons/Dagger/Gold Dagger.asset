@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
-  m_Name: Gold Axe
+  m_Name: Gold Dagger
   m_EditorClassIdentifier: 
-  itemID: 74d1c2be-85dc-44be-97bc-87ca320c867f
-  displayName: Common Axe
-  description: 
-  icon: {fileID: 1666219701, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
-  pickup: {fileID: 8095398419107771611, guid: c053f23624af8cd47a821c732477256c, type: 3}
+  itemID: 45028039-39ba-4503-b896-050eaf514ced
+  displayName: Golden Dagger
+  description: Damage +30
+  icon: {fileID: 0}
+  pickup: {fileID: 3894105250079936546, guid: 842c60403ff0ff94cb5e213a747c9287, type: 3}
   stackable: 0
-  price: 250
+  price: 325
   category: 2
   allowedEquipLocation: 5
   equipCondition:
     and: []
-  animatorOverride: {fileID: 22100000, guid: 9816d7f51fcd215478fe24928380fe02, type: 2}
-  equippedPrefab: {fileID: 4102689125654129166, guid: 91877006b7c00fc48828a28722a8fe29, type: 3}
-  weaponDamage: 25
+  animatorOverride: {fileID: 22100000, guid: df8ef4f9e5631164ca6c5a274e1e1b7f, type: 2}
+  equippedPrefab: {fileID: 1136311836053167100, guid: 4d2c0b3e7d8b12e418eeabdfb6b4cf26, type: 3}
+  weaponDamage: 30
   percentageBonus: 0
   weaponRange: 2
   isRightHanded: 1
