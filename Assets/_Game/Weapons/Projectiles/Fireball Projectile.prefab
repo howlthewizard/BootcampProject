@@ -4832,7 +4832,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1b0fea076fb0574d868f6e3d9523f52, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4936,11 +4935,23 @@ MonoBehaviour:
   hitEffect: {fileID: 2302457091093092515, guid: 65f38cff9bc2495448f6668fa0e1cb79, type: 3}
   maxLifeTime: 4
   destroyOnHit:
-  - {fileID: 0}
+  - {fileID: 779171478586021456}
   lifeAfterImpact: 0
   onHit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4364192602315776010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &6625348177331667087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4996,7 +5007,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: da0093ebe4323b846a8f67e40229df09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4c570536430af76468e0a6b1fb9edc0a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5124,7 +5135,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8c4a6d3173c94d04c9896a4afd752f69, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e8e0f3d2e82bef040bfd1ecae044e352, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

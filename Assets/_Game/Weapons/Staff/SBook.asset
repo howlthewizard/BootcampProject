@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
-  m_Name: Common Hammer
+  m_Name: SBook
   m_EditorClassIdentifier: 
-  itemID: 035a96b2-26b6-417f-9453-db76bc3fc649
-  displayName: Black Hammer
-  description: 
+  itemID: f8195ae6-9d37-4394-adb9-08a4df013a86
+  displayName: Fire Spell
+  description: 'Fire magic '
   icon: {fileID: 0}
-  pickup: {fileID: 8095398419107771611, guid: d096976ebd8f5e24ebc6b980d2b3579e, type: 3}
+  pickup: {fileID: 8095398419107771611, guid: 816caa33a1616d44e86db420e9094ff1, type: 3}
   stackable: 0
-  price: 55
+  price: 100
   category: 2
   allowedEquipLocation: 5
   equipCondition:
     and: []
-  animatorOverride: {fileID: 22100000, guid: ff9c9032e86fb064087084a5a06879c9, type: 2}
-  equippedPrefab: {fileID: 3056064786585306176, guid: 3b2b05997e8c5fe4ca9774ff555f2ce9, type: 3}
+  animatorOverride: {fileID: 22100000, guid: 33f614c6440918e48955fbc5170e1f8d, type: 2}
+  equippedPrefab: {fileID: 6145361012376627771, guid: dddfad7235bfd3f43baaec80efa289af, type: 3}
   weaponDamage: 10
   percentageBonus: 0
   weaponRange: 2
-  isRightHanded: 1
-  projectile: {fileID: 0}
+  isRightHanded: 0
+  projectile: {fileID: 4363093564197430368, guid: 14f3feb392d853c429b9a8a9931bfd9e, type: 3}

@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
   m_Name: Dagger
   m_EditorClassIdentifier: 
+  itemID: 45028039-39ba-4503-b896-050eaf514ced
+  displayName: Rogue Dagger
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 3894105250079936546, guid: 842c60403ff0ff94cb5e213a747c9287, type: 3}
+  stackable: 0
+  price: 60
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
   animatorOverride: {fileID: 22100000, guid: df8ef4f9e5631164ca6c5a274e1e1b7f, type: 2}
   equippedPrefab: {fileID: 1136311836053167100, guid: 4d2c0b3e7d8b12e418eeabdfb6b4cf26, type: 3}
-  weaponDamage: 6
+  weaponDamage: 8
   percentageBonus: 0
   weaponRange: 2
   isRightHanded: 1
