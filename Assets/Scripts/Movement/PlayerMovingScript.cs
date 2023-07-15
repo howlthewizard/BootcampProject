@@ -40,18 +40,34 @@ public class PlayerMovingScript : MonoBehaviour
         if(forwardPressed && velocityZ < 1.5f)
         {
             velocityZ += Time.deltaTime * speed;
+            if (velocityZ > 1.5f)
+            {
+                velocityZ = 1.5f;
+            }
         }
         if (backPressed && velocityZ > -1.5f)
         {
             velocityZ -= Time.deltaTime * speed;
+            if (velocityZ < -1.5f)
+            {
+                velocityZ = -1.5f;
+            }
         }
         if (leftPressed && velocityX > -1.5f)
         {
             velocityX -= Time.deltaTime * speed;
+            if(velocityX <-1.5f)
+            {
+                velocityX = -1.5f;
+            }
         }
         if (rightPressed && velocityX < 1.5f)
         {
             velocityX += Time.deltaTime * speed;
+            if (velocityX > 1.5f)
+            {
+                velocityX = 1.5f;
+            }
         }
         if(!forwardPressed && velocityZ > 0f)
         {
