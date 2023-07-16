@@ -4,7 +4,7 @@
 ## Takım Elemanları
 [Ahmet Alper Akın: Product Owner](https://www.linkedin.com/in/alper-ak%C4%B1n-9177361ba/) <br/> [Aybala Kılınç: Scrum Master](https://www.linkedin.com/in/aybalakilinc/) <br/> [Ömer Faruk İlhan: Developer](https://www.linkedin.com/in/%C3%B6mer-faruk-ilhan-b115a9219/) <br/> [Muhammet Mustafa Özdemir: Developer](https://www.linkedin.com/in/muhammedmustafaozdemir/) <br/> [Merve İnce: Developer](https://www.linkedin.com/in/merve-ince-aa09261a3/)
 ## Ürün İsmi
-Dark Throne: Revenge of the Kingdom
+**Dark Throne: Revenge of the Kingdom**
 ## Ürün Açıklaması
  Korkusuz Giovanni the Galahad! Sen ki krallığından sona kalan nadide askerlerinden biri. Vhalandor krallığını saran karanlık kötü güçlerle yüzleşmeye hazırlan. Krallığını tekrar eski kudretine kavuşturmak için tehlikelerle dolu bir yolculuğa çıkmaya hazır ol! <br/>
 
@@ -184,7 +184,7 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır.[Daily Scrum Chats (Sprint3)](https://github.com/howlthewizard/BootcampProject/files/12064138/Daily.Scrum.Chats.Sprint3.pdf)
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint3)](https://github.com/howlthewizard/BootcampProject/files/12064138/Daily.Scrum.Chats.Sprint3.pdf)
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
 
