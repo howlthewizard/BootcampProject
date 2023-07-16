@@ -184,7 +184,7 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. 
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır.[Daily Scrum Chats (Sprint3)](https://github.com/howlthewizard/BootcampProject/files/12064138/Daily.Scrum.Chats.Sprint3.pdf)
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
 
@@ -193,11 +193,24 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Sprint board update:** Sprint board screenshotları:
 
+![Ekran görüntüsü 2023-07-16 153521](https://github.com/howlthewizard/BootcampProject/assets/117678371/e2a8060c-9bd3-4290-aa1b-bb909d87dd9f)
+
+![Ekran görüntüsü 2023-07-16 153839](https://github.com/howlthewizard/BootcampProject/assets/117678371/e10434c6-b2e0-42ca-b505-665b47b4560d)
+
+![Ekran görüntüsü 2023-07-16 154025](https://github.com/howlthewizard/BootcampProject/assets/117678371/97561f40-787b-4a1c-8a16-c9ac553ec4dc)
+
+![Ekran görüntüsü 2023-07-16 155619](https://github.com/howlthewizard/BootcampProject/assets/117678371/adbad03f-4be5-4694-8147-22911491472f)
 
 -	**Ürün Durumu:** Ekran görüntüleri:
 
+![Ekran görüntüsü 2023-07-16 160510](https://github.com/howlthewizard/BootcampProject/assets/117678371/b4794f89-7db4-4252-9930-191050bfa48e)
 
-- **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu.
+![Ekran görüntüsü 2023-07-16 160733](https://github.com/howlthewizard/BootcampProject/assets/117678371/14d3f8de-48b9-4ba1-851e-9ecfbffd3193)
+
+![Ekran görüntüsü 2023-07-16 160801](https://github.com/howlthewizard/BootcampProject/assets/117678371/ad4cb438-79a7-493b-8734-a9bed39d7649)
+
+- **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti.
+
   * **Ahmet Alper Akın:** 
   * **Aybala Kılınç:** 
   * **Merve İnce:** 
@@ -213,7 +226,6 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 *Hangi sorunlar ile karşılaştık?* <br/>
 - a
-
 
 - **Jüriye Özel Notlar:** Sprint Review ve Sprint Retrospective toplantısı çizelgesi Miro'da tarafımızdan paylaşılmaktadır. [Miro Sprint Review ve Sprint Retrospective toplantısı](https://miro.com/app/board/uXjVM9qn4-Q=/?share_link_id=494475938040)
 
