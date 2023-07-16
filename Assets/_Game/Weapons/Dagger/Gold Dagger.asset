@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 45028039-39ba-4503-b896-050eaf514ced
   displayName: Golden Dagger
   description: Damage +30
-  icon: {fileID: -768368320, guid: 29e5336de30cc454b9e6acedfc3c7056, type: 3}
+  icon: {fileID: 0}
   pickup: {fileID: 3894105250079936546, guid: 842c60403ff0ff94cb5e213a747c9287, type: 3}
   stackable: 0
   price: 325

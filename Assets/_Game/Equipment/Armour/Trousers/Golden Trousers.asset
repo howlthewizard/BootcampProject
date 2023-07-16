@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 4de260a2-473c-4372-a132-2961bd66ed2c
   displayName: 'Golden Trousers '
   description: +25 HP and +15 Mana points.
-  icon: {fileID: 1364568055, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
+  icon: {fileID: -1793285895, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
   pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
   stackable: 0
   price: 355

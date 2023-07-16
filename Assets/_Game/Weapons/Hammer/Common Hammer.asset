@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb452be9f04f7f4daa45f0afaa90747, type: 3}
-  m_Name: Bronze Hammer
+  m_Name: Common Hammer
   m_EditorClassIdentifier: 
   itemID: 035a96b2-26b6-417f-9453-db76bc3fc649
-  displayName: Stale Bronze Hammer
+  displayName: Black Hammer
   description: 
-  icon: {fileID: -737482215, guid: 29e5336de30cc454b9e6acedfc3c7056, type: 3}
+  icon: {fileID: 0}
   pickup: {fileID: 8095398419107771611, guid: d096976ebd8f5e24ebc6b980d2b3579e, type: 3}
   stackable: 0
   price: 55
