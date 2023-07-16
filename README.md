@@ -23,7 +23,7 @@ Dark Throne: Revenge of the Kingdom’ın gizemlerini keşfet, kötülüğü alt
 - **Oynanışı:** Dark Throne: Revenge of the Kingdom oyunu, platform ve aksiyonun mükemmel bir birleşimi olan heyecan verici bir oynanış sunar. Oyuncular, düşmanlarla dolu savaşlarda yeteneklerini kullanarak ilerlerken, farklı dünyalar arasında geçiş yapar ve bosslara savaşırlar. <br/>
 - **Düşmanlar ve Boss Savaşları:** Oyuncular, Dark Throne: Revenge of the Kingdom oyununda düşmanlar ve boss karakterleriyle savaşırken çeşitli saldırı kombinasyonları ve özel yetenekler kullanarak üstünlük sağlayacak. Güçlü silahlar ve ekipmanlarla karakteri geliştirerek zorlu boss savaşlarında başarılı olmaya ve krallığınızı karanlık güçlerden korumaya çalışırlar. <br/>
 - **Yetenek Geliştirme:** Dark Throne: Revenge of the Kingdom oyununda yetenek geliştirme özelliği sayesinde oyuncular, Sir Giovanni the Galahad adlı savaşçının yeteneklerini ilerleterek daha güçlü bir karakter haline getirebilirler. Oyuncular, kazandığı veya satın aldığı yeteneklerle saldırı gücünü artırabilir, özel yeteneklerini açabilir ve karakterlerini kişiselleştirebilirler. <br/>
--**Müzikler ve Tasarım:** Müzikler, oyunun tempo ve atmosferini güçlendirirken görsel tasarımlar, ormanlar, mezarlıklar ve zindanlar gibi mekanlar nefes kesici bir şekilde hayata geçirir. <br/>
+- **Müzikler ve Tasarım:** Müzikler, oyunun tempo ve atmosferini güçlendirirken görsel tasarımlar, ormanlar, mezarlıklar ve zindanlar gibi mekanlar nefes kesici bir şekilde hayata geçirir. <br/>
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
 
