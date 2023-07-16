@@ -77,10 +77,9 @@ public class DialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && isActive == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isActive == true)
         {
             NextMessage();
         }
     }
-    
 }
