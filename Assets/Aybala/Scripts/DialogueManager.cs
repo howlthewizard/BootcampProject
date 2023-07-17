@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public RectTransform backgroundBox;
     private GameObject player;
 
+    public bool gameHasEnded = false;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -69,6 +70,10 @@ public class DialogueManager : MonoBehaviour
             //Scale'ini (0,0,0) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
+            if(SceneManager.GetActiveScene().buildIndex == 5)
+            {
+                gameHasEnded = true;
+            }
         }
     }
     void AnimateTextColor()
