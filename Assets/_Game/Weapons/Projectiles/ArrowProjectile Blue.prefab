@@ -134,6 +134,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5803916004833797436, guid: 77dd4f17d422407438f74a9a01e69da4, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 2181628304218299087, guid: b1fb9d88509d6a145a9b95c31be87a6d, type: 3}
+    - target: {fileID: 5803916004833797436, guid: 77dd4f17d422407438f74a9a01e69da4, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
