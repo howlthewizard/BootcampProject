@@ -19,14 +19,14 @@ public class CombatDoorMng : MonoBehaviour
     {
         killedEnemies++;
        
-        if (killedEnemies >= totalEnemies)
+        if (killedEnemies == 4)
         {
             isDoorLocked = false;
             OpenDoor();
         }
     }
 
-    private void OpenDoor()
+    public void OpenDoor()
     {
         isDoorLocked = false;
         invisCol.gameObject.SetActive(false);

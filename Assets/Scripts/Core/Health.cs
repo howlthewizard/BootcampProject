@@ -5,6 +5,7 @@ using AI.Core;
 using AI.Saving;
 using AI.Stats;
 using AI.Utils;
+using UnityEngine.SceneManagement;
 
 namespace Attributes
 {
@@ -12,7 +13,8 @@ namespace Attributes
     {
         [SerializeField] float regenerationPercentage = 70;
         [SerializeField] TakeDamageEvent takeDamage;
-        [SerializeField] private PlayerHealthBar healthBar; 
+        [SerializeField] private PlayerHealthBar healthBar;
+        public CombatDoorMng combatdoor;
         public UnityEvent onDie;
 
         [System.Serializable]
@@ -55,6 +57,11 @@ namespace Attributes
             if (IsDead())
             {
                 onDie.Invoke();
+                if(gameObject.tag == "Enemy" 
+                    && SceneManager.GetActiveScene().buildIndex == 4)
+                {
+                    combatdoor.killedEnemies++;
+                }
             }
             else
             {
