@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 035a96b2-26b6-417f-9453-db76bc3fc649
   displayName: Stale Bronze Hammer
-  description: 
+  description: +8 Damage
   icon: {fileID: -737482215, guid: 29e5336de30cc454b9e6acedfc3c7056, type: 3}
   pickup: {fileID: 8095398419107771611, guid: d096976ebd8f5e24ebc6b980d2b3579e, type: 3}
   stackable: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     and: []
   animatorOverride: {fileID: 22100000, guid: ff9c9032e86fb064087084a5a06879c9, type: 2}
   equippedPrefab: {fileID: 3056064786585306176, guid: 3b2b05997e8c5fe4ca9774ff555f2ce9, type: 3}
-  weaponDamage: 10
+  weaponDamage: 8
   percentageBonus: 0
   weaponRange: 10
   isRightHanded: 1

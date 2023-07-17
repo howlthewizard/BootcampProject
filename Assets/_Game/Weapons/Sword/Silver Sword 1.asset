@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Silver Sword 1
   m_EditorClassIdentifier: 
   itemID: cfdc0a64-5579-480f-b449-45a007ed5b95
-  displayName: Common Sword
-  description: 
+  displayName: Silver Handmade Sword
+  description: +18 Damage
   icon: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
   pickup: {fileID: 3894105250079936546, guid: da7fabffbd4b05d42baa59b9446ef840, type: 3}
   stackable: 0
