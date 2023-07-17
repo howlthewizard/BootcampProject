@@ -1,10 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AI.Controller
 {
     public class PatrolPath : MonoBehaviour
     {
-        const float waypointGizmoRadius = 0.5f;
+        const float waypointGizmoRadius = 0.3f;
+
         private void OnDrawGizmos()
         {
             for (int i = 0; i < transform.childCount; i++)
@@ -21,7 +24,6 @@ namespace AI.Controller
             {
                 return 0;
             }
-
             return i + 1;
         }
 
