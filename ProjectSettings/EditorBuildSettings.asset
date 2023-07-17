@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Aybala.unity
-    guid: c54bdca00c1a3b34ea2394d7168d62d7
+    guid: e9133f8513336ee4caf5f3c52dfa8b3b
   - enabled: 1
     path: Assets/Scenes/Mustafa.unity
     guid: 182adc2949af8304eac60bc8e29c4ca1
@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Mustafa4.unity
     guid: abfd8819a6c148e45ba8d41bc60d0acc
   - enabled: 1
-    path: Assets/Scenes/Omer.unity
-    guid: 551fb6e1475098c47812c369f1224f93
+    path: Assets/Scenes/EndGame.unity
+    guid: c2856bafbd23eec43b8386f92286ee9c
   m_configObjects: {}
