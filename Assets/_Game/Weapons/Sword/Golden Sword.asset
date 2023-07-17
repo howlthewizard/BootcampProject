@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Golden Sword
   m_EditorClassIdentifier: 
   itemID: cfdc0a64-5579-480f-b449-45a007ed5b95
-  displayName: Common Sword
-  description: 
+  displayName: Masterpiece Sword
+  description: +30 Damage
   icon: {fileID: 1754229641, guid: 83b72d677b0ec04489e6df9052fe1d24, type: 3}
   pickup: {fileID: 3894105250079936546, guid: da7fabffbd4b05d42baa59b9446ef840, type: 3}
   stackable: 0
