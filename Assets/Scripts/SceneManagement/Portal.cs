@@ -48,7 +48,11 @@ namespace AI.SceneManagement
 
             yield return fader.FadeOut(fadeOutTime);
             //Save current level.
-            wrapper.Save();
+            if(gameObject.tag == "LevelToSave")
+            {
+                wrapper.Save();
+
+            }
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
             PlayerCursorController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerCursorController>();

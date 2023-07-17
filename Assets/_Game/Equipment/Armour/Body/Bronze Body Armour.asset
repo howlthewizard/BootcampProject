@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 1a36e773-d355-4a97-a79b-fbe7e294b322
   displayName: Bronze Body Armour
   description: +15 HP and +4 Defence points.
-  icon: {fileID: 384600981, guid: 29e5336de30cc454b9e6acedfc3c7056, type: 3}
+  icon: {fileID: 1452342241, guid: ed9f379a748861249aed2832a5228dcf, type: 3}
   pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
   stackable: 0
   price: 60

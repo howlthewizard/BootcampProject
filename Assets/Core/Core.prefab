@@ -724,15 +724,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.36586
+      value: 852.18475
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.852875
+      value: 56.827866
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.12275
+      value: 109.173485
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalRotation.w
@@ -752,11 +752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788637, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: near clip plane
-      value: -60
+      value: -500
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788637, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: orthographic size
-      value: 17
+      value: 28.49
       objectReference: {fileID: 0}
     - target: {fileID: 4776493437528683898, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_RootOrder
@@ -872,6 +872,38 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 054411784c3fdf74d9db120b4a792a71, type: 3}
+    - target: {fileID: 808938119, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808938119, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -934730359, guid: c07f99141eb59474082e3ff71da806bd, type: 3}
+    - target: {fileID: 808938119, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 808938119, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 808938119, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302676673, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 467f7a7f0971e2a4b8842ddd5ff5b8c8, type: 2}
+    - target: {fileID: 1302676673, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6112205415184124768, guid: 467f7a7f0971e2a4b8842ddd5ff5b8c8, type: 2}
+    - target: {fileID: 1302676673, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1496163787, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1107,6 +1139,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2084769567292369281, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
   m_PrefabInstance: {fileID: 9073314404551731926}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &388912092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6990841717888648023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300597ab8541ab2479c7aa86fb558460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownTime: 6
+  countdownText: {fileID: 334589848}
+  Panel: {fileID: 1761222282}
 --- !u!114 &617801368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,21 +1200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 6990841717888648028}
   restartGamePanel: {fileID: 6800726492887469721}
---- !u!114 &388912092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990841717888648023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 300597ab8541ab2479c7aa86fb558460, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countdownTime: 6
-  countdownText: {fileID: 334589848}
-  Panel: {fileID: 1761222282}
 --- !u!4 &6990841717888648024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2084769567292369294, guid: 3fe72cb55a4c5b54e989dc48228464bc, type: 3}
