@@ -65,6 +65,7 @@ public class DialogueManager : MonoBehaviour
             player.GetComponent<PlayerMovingScript>().enabled = true;
             player.GetComponent<Jump>().enabled = true;
             player.GetComponent<Dash>().enabled = true;
+            player.GetComponent<Animator>().enabled = true;
             //Scale'ini (0,0,0) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;

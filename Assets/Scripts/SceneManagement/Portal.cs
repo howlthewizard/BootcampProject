@@ -64,7 +64,10 @@ namespace AI.SceneManagement
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
-            wrapper.Save();
+            if (gameObject.tag == "LevelToSave")
+            {
+                wrapper.Save();
+            }
 
             yield return new WaitForSeconds(fadeWaitTime);
             fader.FadeIn(fadeInTime);
