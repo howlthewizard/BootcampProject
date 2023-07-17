@@ -5,6 +5,8 @@ namespace AI.Stats
         Player,
         Witch,
         Boss,
+        Boss1,
+        Boss2,
         Barbarian,
         SkeletonArcher,
         SkeletonMage,
