@@ -4,26 +4,24 @@
 ## Takım Elemanları
 [Ahmet Alper Akın: Product Owner](https://www.linkedin.com/in/alper-ak%C4%B1n-9177361ba/) <br/> [Aybala Kılınç: Scrum Master](https://www.linkedin.com/in/aybalakilinc/) <br/> [Ömer Faruk İlhan: Developer](https://www.linkedin.com/in/%C3%B6mer-faruk-ilhan-b115a9219/) <br/> [Muhammet Mustafa Özdemir: Developer](https://www.linkedin.com/in/muhammedmustafaozdemir/) <br/> [Merve İnce: Developer](https://www.linkedin.com/in/merve-ince-aa09261a3/)
 ## Ürün İsmi
-Dark Throne: Revenge of the Kingdom
+**Dark Throne: Revenge of the Kingdom**
 ## Ürün Açıklaması
  Korkusuz Giovanni the Galahad! Sen ki krallığından sona kalan nadide askerlerinden biri. Vhalandor krallığını saran karanlık kötü güçlerle yüzleşmeye hazırlan. Krallığını tekrar eski kudretine kavuşturmak için tehlikelerle dolu bir yolculuğa çıkmaya hazır ol! <br/>
-
- Bu şerefli yolculuğun boyunca amacına ulaşmana engel olacak bir sürü düşmanla savaşacak, birbirinden güçlü karanlıklar lorduyla yüzleşeceksin. Krallığı kurtarmaya çalışacaksın.  <br/>
  
  Krallığın kurtarıcısı olarak karanlıklar lordlarına karşı kraliyetin için mücadele edeceksin. Whispering Woods, Haunted Graves ve Dark Peak dünyaları arasında geçiş yaparak zorlu platform bölümlerini aşacak, düşmanlarla savaşacak ve sana verilen görevlerin üstesinden geleceksin. Oyununda tamamlanmayı bekleyen birçok seviye seni bekliyor.  <br/>
  
  Bu macera dolu yolculukta tek olmayacaksın. Seninle, senin gibi krallığı için canını vermeye hazır olan Bilge Hiroshi the Oakwise’ın stratejileri, Demirci Magnus the Anvil’in diyarın en iyi çeliğinden yaptığı silahları ve Tüccar Khaled Al-Hawala’ın dünyanın dört bir yanından getirttiği özel karışımları seninle olacak.  <br/>
  
-Dark Throne: Revenge of the Kingdom, heyecan verici bir platform- aksiyon oyunudur ve sizi Vhalandor krallığının eşsiz dünyasına taşıyor. Birbirinden muhteşem karakterleri, heyecan verici seviyeleri ve sürükleyici hikayesi seni oyunun içine çekerken birbirinden büyülü dünyalarla tanışmanı sağlayacak. Muhteşem müzikleriyle canlı renklere ek olarak hızlı oynanış temposuyla sana benzersiz bir deneyim yaratacak. Vhalandor diyarındaki yolcuğun boyunca karşılaşacağın kasabalar, ormanlar ve zindanlar nefesini kesecek.  <br/>
+ Dark Throne: Revenge of the Kingdom, heyecan verici bir platform- aksiyon oyunudur ve sizi Vhalandor krallığının eşsiz dünyasına taşıyor. Birbirinden muhteşem karakterleri, heyecan verici seviyeleri ve sürükleyici hikayesi seni oyunun içine çekerken birbirinden büyülü dünyalarla tanışmanı sağlayacak. Muhteşem müzikleriyle canlı renklere ek olarak hızlı oynanış temposuyla sana benzersiz bir deneyim yaratacak. Vhalandor diyarındaki yolcuğun boyunca karşılaşacağın kasabalar, ormanlar ve zindanlar nefesini kesecek.  <br/>
 
-Dark Throne: Revenge of the Kingdom’ın gizemlerini keşfet, kötülüğü alt et ve krallığını eski kudretine kavuştur. Dark Throne: Revenge of the Kingdom, sizi heyecan dolu bir maceraya çağırıyor. Cesaretini test etme ve unutulmaz bir serüvene atılma zamanın geldi. Vhalandor krallığının kaderi senin ellerinde! <br/>
+ Dark Throne: Revenge of the Kingdom’ın gizemlerini keşfet, kötülüğü alt et ve krallığını eski kudretine kavuştur. Dark Throne: Revenge of the Kingdom, sizi heyecan dolu bir maceraya çağırıyor. Cesaretini test etme ve unutulmaz bir serüvene atılma zamanın geldi. Vhalandor krallığının kaderi senin ellerinde! <br/>
 ## Ürün Özellikleri
 - **Oyun Hikayesi:** Oyuncular, bir şövalyeyi kontrol ettikleri oyunda Vhalandor olarak bilinen bir krallıkta maceraya atılırlar. Hikâye, şövalyenin çocukluk masallarında duyduğu sürgün kralın izine düşmesiyle başlar. Sürgün kralı esaretinden kurtarmak ve krallığı saran karanlıkları yenmek için macera dolu bir yolculuğa çıkarlar. <br/>
 - **Oyun Dünyası:** Oyun, birbirinden büyüleyici seviyeleri içeren bir oyun dünyasına sahiptir. Oyuncular, ormanın derinliklerinden başlayarak mezarlığın gizemlerine, zindanın zorlu yapısına kadar birçok farklı atmosferi keşfetmeye başlarlar. <br/>
-- **Oynanışı:** Dark Throne: Revenge of the Kingdom oyunu, platform ve aksiyonun mükemmel bir birleşimi olan heyecan verici bir oynanış sunar. Oyuncular, düşmanlarla dolu savaşlarda yeteneklerini kullanarak ilerlerken, farklı dünyalar arasında geçiş yapar ve bosslara savaşırlar. <br/>
+- **Oynanışı:** Dark Throne: Revenge of the Kingdom oyunu, platform ve aksiyonun mükemmel bir birleşimi olan heyecan verici bir oynanış sunar. Oyuncular, düşmanlarla dolu savaşlarda yeteneklerini kullanarak ilerlerken, farklı dünyalar arasında geçiş yapar ve bosslarla savaşırlar. <br/>
 - **Düşmanlar ve Boss Savaşları:** Oyuncular, Dark Throne: Revenge of the Kingdom oyununda düşmanlar ve boss karakterleriyle savaşırken çeşitli saldırı kombinasyonları ve özel yetenekler kullanarak üstünlük sağlayacak. Güçlü silahlar ve ekipmanlarla karakteri geliştirerek zorlu boss savaşlarında başarılı olmaya ve krallığınızı karanlık güçlerden korumaya çalışırlar. <br/>
 - **Yetenek Geliştirme:** Dark Throne: Revenge of the Kingdom oyununda yetenek geliştirme özelliği sayesinde oyuncular, Sir Giovanni the Galahad adlı savaşçının yeteneklerini ilerleterek daha güçlü bir karakter haline getirebilirler. Oyuncular, kazandığı veya satın aldığı yeteneklerle saldırı gücünü artırabilir, özel yeteneklerini açabilir ve karakterlerini kişiselleştirebilirler. <br/>
--**Müzikler ve Tasarım:** Müzikler, oyunun tempo ve atmosferini güçlendirirken görsel tasarımlar, ormanlar, mezarlıklar ve zindanlar gibi mekanlar nefes kesici bir şekilde hayata geçirir. <br/>
+- **Müzikler ve Tasarım:** Müzikler, oyunun tempo ve atmosferini güçlendirirken görsel tasarımlar, ormanlar, mezarlıklar ve zindanlar gibi mekanlar nefes kesici bir şekilde hayata geçirir. <br/>
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
 
@@ -184,7 +182,7 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Backlog düzeni ve story seçimleri:** Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. User storyler için görevler atanmıştır ve her bir göreve hedef puan verilmiştir. Bu puanlar hedeflenen puan sayısını geçmeyecek şekilde düzenlenmiştir.
 
--	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. 
+-	**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord’dan kanal açıp yapılmasına karar verilmiştir. Projeye karar verildikten sonra herkes Daily Scrum’a katılım göstermiştir. Daily Scrum toplantısı örnekleri Word dosyasından pdf’e çevrilerek Readme'de tarafımızdan paylaşılmaktadır. [Daily Scrum Chats (Sprint3)](https://github.com/howlthewizard/BootcampProject/files/12066221/Daily.Scrum.Chats.Sprint3.1.pdf)
 
 Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task’ları) gösterirken, mavi item'lar user story'leri temsil etmektedir.
 
@@ -193,27 +191,38 @@ Story'ler yapılacak işlere (task'lara) bölünmüştür. Miro Board'da gözük
 
 -	**Sprint board update:** Sprint board screenshotları:
 
+![Ekran görüntüsü 2023-07-16 153521](https://github.com/howlthewizard/BootcampProject/assets/117678371/e2a8060c-9bd3-4290-aa1b-bb909d87dd9f)
+
+![Ekran görüntüsü 2023-07-16 153839](https://github.com/howlthewizard/BootcampProject/assets/117678371/e10434c6-b2e0-42ca-b505-665b47b4560d)
+
+![Ekran görüntüsü 2023-07-16 154025](https://github.com/howlthewizard/BootcampProject/assets/117678371/97561f40-787b-4a1c-8a16-c9ac553ec4dc)
+
+![Ekran görüntüsü 2023-07-16 155619](https://github.com/howlthewizard/BootcampProject/assets/117678371/adbad03f-4be5-4694-8147-22911491472f)
 
 -	**Ürün Durumu:** Ekran görüntüleri:
 
+![Ekran görüntüsü 2023-07-16 160510](https://github.com/howlthewizard/BootcampProject/assets/117678371/b4794f89-7db4-4252-9930-191050bfa48e)
 
-- **Sprint Review:** Bütün ekiple beraber projede hangi kısımların bittiği hakkında konuşuldu. Herkes yaptığı işlerden bahsetti. Biten kısımlar hakkında konuşuldu.
-  * **Ahmet Alper Akın:** 
-  * **Aybala Kılınç:** 
-  * **Merve İnce:** 
-  * **Muhammet Mustafa Özdemir:** 
-  * **Ömer Faruk İlhan:**
+![Ekran görüntüsü 2023-07-16 160733](https://github.com/howlthewizard/BootcampProject/assets/117678371/14d3f8de-48b9-4ba1-851e-9ecfbffd3193)
+
+![Ekran görüntüsü 2023-07-16 160801](https://github.com/howlthewizard/BootcampProject/assets/117678371/ad4cb438-79a7-493b-8734-a9bed39d7649)
+
+- **Sprint Review:** Bütün ekiple beraber projeyi inceledik ve üzerinde konuştuk.
   
 - **Toplantı Katılımcıları:** Ahmet Alper Akın, Aybala Kılınç, Merve İnce, Muhammet Mustafa Özdemir, Ömer Faruk İlhan
 
--	**Sprint Retrospective:** Önceki Sprintler hakkında konuşuldu ve herkes, proje hakkındaki düşüncelerini paylaştı. Nelerin iyi gittiği, hangi sorunlar ile karşılaştığımız ve nelerin geliştirilmesi gerektiği hakkında konuştuk.
+-	**Sprint Retrospective:** Önceki Sprintler hakkında konuşuldu ve herkes, proje hakkındaki düşüncelerini paylaştı. Nelerin iyi gittiği, hangi sorunlar ile karşılaştığımız hakkında konuştuk.
 
 *Neler iyi gitti?* <br/>
-- a
+- Takım içi iletişimi koruma
+- Her gün discord toplantısına devam etme
+- Tüm görevler tamamlandı
 
 *Hangi sorunlar ile karşılaştık?* <br/>
-- a
+- Projede sürekli conflict yaşanması
+- Proje conflict sonucu yapılan yerlerin tekrar yapılması ve yavaşlama
 
+ ![Ekran görüntüsü 2023-07-17 081257](https://github.com/howlthewizard/BootcampProject/assets/117678371/95445655-69f5-41da-a09c-6ba5e4c2f0c4)
 
 - **Jüriye Özel Notlar:** Sprint Review ve Sprint Retrospective toplantısı çizelgesi Miro'da tarafımızdan paylaşılmaktadır. [Miro Sprint Review ve Sprint Retrospective toplantısı](https://miro.com/app/board/uXjVM9qn4-Q=/?share_link_id=494475938040)
 
