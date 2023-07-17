@@ -8,10 +8,15 @@ public class RestartController : MonoBehaviour
 {
     [SerializeField] private Health health;
     [SerializeField] private GameObject restartGamePanel = null;
+    private Animator animator;
+
+    private void Awake()
+    {
+       animator = GetComponent<Animator>();
+    }
     private void Start()
     {
         health = GetComponent<Health>();
-       
     }
     private void Update()
     {
@@ -25,9 +30,9 @@ public class RestartController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Restart"))
         {
+            animator.SetTrigger("die");
+            health.IsDead();
             StartCoroutine(ResetPanel());
-           
-            
         }
     }
 
