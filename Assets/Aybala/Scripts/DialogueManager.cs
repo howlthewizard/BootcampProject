@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text actorName;
     public TMP_Text messageText;
     public RectTransform backgroundBox;
+    private GameObject player;
 
 
     Message[] currentMessages;
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         instance = this; //Singleton ile instance'ý bu scripte eþitledik
+        player = GameObject.FindWithTag("Player");
     }
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
@@ -60,7 +62,9 @@ public class DialogueManager : MonoBehaviour
         else
         {
             Debug.Log("Conversation Ended");
-
+            player.GetComponent<PlayerMovingScript>().enabled = true;
+            player.GetComponent<Jump>().enabled = true;
+            player.GetComponent<Dash>().enabled = true;
             //Scale'ini (0,0,0) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;

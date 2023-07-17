@@ -5,13 +5,22 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-      public Message[] messages;
-      public Actor[] actors;
+    public Message[] messages;
+    public Actor[] actors;
+    private GameObject player;
 
-      public void StartDialogue()
-      {
-        DialogueManager.instance.OpenDialogue(messages, actors);
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player");
     }
+
+    public void StartDialogue()
+      {
+        player.GetComponent<PlayerMovingScript>().enabled = false;
+        player.GetComponent<Jump>().enabled = false;
+        player.GetComponent<Dash>().enabled = false;
+        DialogueManager.instance.OpenDialogue(messages, actors);
+      }
      
 }
 

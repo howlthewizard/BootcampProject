@@ -1037,7 +1037,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 3
-  patrolSpeedFraction: 0.5
+  patrolSpeedFraction: 0.8
   shoutDistance: 5
 --- !u!114 &4740116580280907785
 MonoBehaviour:

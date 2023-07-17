@@ -51,7 +51,6 @@ namespace AI.SceneManagement
             if(gameObject.tag == "LevelToSave")
             {
                 wrapper.Save();
-
             }
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);

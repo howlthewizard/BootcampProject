@@ -1,14 +1,15 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using AI.Combat;
-using AI.Controller;
 using AI.Core;
 using AI.Utils;
 using Attributes;
 using AI.Movement;
 
-namespace AI.Control
+namespace AI.Controller
 {
     public class AIController : MonoBehaviour
     {
@@ -24,7 +25,7 @@ namespace AI.Control
 
         Fighter fighter;
         Health health;
-        AIMover aiMover;
+        AIMover mover;
         GameObject player;
 
         LazyValue<Vector3> guardPosition;
@@ -37,7 +38,7 @@ namespace AI.Control
         {
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
-            aiMover = GetComponent<AIMover>();
+            mover = GetComponent<AIMover>();
             player = GameObject.FindWithTag("Player");
 
             guardPosition = new LazyValue<Vector3>(GetGuardPosition);
@@ -111,7 +112,7 @@ namespace AI.Control
 
             if (timeSinceArrivedAtWaypoint > waypointDwellTime)
             {
-                aiMover.StartMoveAction(nextPosition, patrolSpeedFraction);
+                mover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }
         }
 
