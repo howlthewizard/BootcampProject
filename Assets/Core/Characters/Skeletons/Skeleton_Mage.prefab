@@ -1125,7 +1125,7 @@ MonoBehaviour:
   suspicionTime: 3
   agroCooldownTime: 5
   patrolPath: {fileID: 0}
-  waypointTolerance: 1
+  waypointTolerance: 6
   waypointDwellTime: 3
   patrolSpeedFraction: 0.8
   shoutDistance: 5
