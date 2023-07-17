@@ -19,6 +19,7 @@ public class DialogueTrigger : MonoBehaviour
         player.GetComponent<PlayerMovingScript>().enabled = false;
         player.GetComponent<Jump>().enabled = false;
         player.GetComponent<Dash>().enabled = false;
+        player.GetComponent<Animator>().enabled = false;
         DialogueManager.instance.OpenDialogue(messages, actors);
       }
      
