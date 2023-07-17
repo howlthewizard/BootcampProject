@@ -23,14 +23,59 @@ MonoBehaviour:
     - 1
     minNumber: 02000000
     maxNumber: 02000000
-  - item: {fileID: 11400000, guid: 484f25f2954b4d8428106e6357ed6bc5, type: 2}
+  - item: {fileID: 11400000, guid: f1eb86b25da542240ae63df2edfc93bb, type: 2}
     relativeChance:
     - 1
     minNumber: 01000000
     maxNumber: 01000000
-  - item: {fileID: 11400000, guid: f1eb86b25da542240ae63df2edfc93bb, type: 2}
+  - item: {fileID: 11400000, guid: d0cfc2e7e47fc9f449cbada2a33efcbc, type: 2}
     relativeChance:
     - 1
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 8582ed1cd085b0a42a2da40e727fda54, type: 2}
+    relativeChance:
+    - 0.2
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: f1eb86b25da542240ae63df2edfc93bb, type: 2}
+    relativeChance:
+    - 0.4
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: ee83e154fc3c0d94e91b487b505b4387, type: 2}
+    relativeChance:
+    - 1
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 713f61074d64ab84895e4c014189c13e, type: 2}
+    relativeChance:
+    - 0.5
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 3ba24f290cafa1e44a3d026c71cbe915, type: 2}
+    relativeChance:
+    - 0.01
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 283950ce72a25b445a5d59b493ce42f7, type: 2}
+    relativeChance:
+    - 0.008
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: ecc81aa2eff7ea247b985a0f6599ffb6, type: 2}
+    relativeChance:
+    - 0.7
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 93ac50fc712b7ec48b6d8e364ff0a6be, type: 2}
+    relativeChance:
+    - 0.8
+    minNumber: 01000000
+    maxNumber: 01000000
+  - item: {fileID: 11400000, guid: 58dadef7c5e47af4faafbef1cb2a888e, type: 2}
+    relativeChance:
+    - 0.4
     minNumber: 01000000
     maxNumber: 01000000
   dropChancePercentage:
