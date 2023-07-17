@@ -20,7 +20,7 @@ namespace Attributes
         {
         }
 
-        LazyValue<float> _health;
+        public LazyValue<float> _health;
 
         bool wasDeadLastFrame = false;
 
@@ -47,7 +47,10 @@ namespace Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
-            healthBar.SetHealth(_health.value);
+            if(gameObject.tag == "Player")
+            {
+                healthBar.SetHealth(_health.value);
+            }
 
             if (IsDead())
             {
@@ -87,7 +90,7 @@ namespace Attributes
             return _health.value / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
-        private void UpdateState()
+        public void UpdateState()
         {
             Animator animator = GetComponent<Animator>();
             if (!wasDeadLastFrame && IsDead())
