@@ -527,6 +527,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -161
       objectReference: {fileID: 0}
+    - target: {fileID: 5490388063376698341, guid: 17ddf451e8be44b4bbd47471f7e51e0d, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5490388063566949071, guid: 17ddf451e8be44b4bbd47471f7e51e0d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -542,6 +546,10 @@ PrefabInstance:
     - target: {fileID: 5490388063732563950, guid: 17ddf451e8be44b4bbd47471f7e51e0d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -161
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490388063732563951, guid: 17ddf451e8be44b4bbd47471f7e51e0d, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5490388063743121904, guid: 17ddf451e8be44b4bbd47471f7e51e0d, type: 3}
       propertyPath: m_Name
@@ -724,15 +732,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 852.18475
+      value: 8.36586
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 56.827866
+      value: 6.852875
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 109.173485
+      value: -46.12275
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788636, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_LocalRotation.w
@@ -752,11 +760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788637, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: near clip plane
-      value: -500
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 4776493436714788637, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: orthographic size
-      value: 28.49
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4776493437528683898, guid: db9b582f162c3b14fbaea7533e1d1695, type: 3}
       propertyPath: m_RootOrder
