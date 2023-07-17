@@ -853,7 +853,27 @@ MonoBehaviour:
   shopName: ...'s Magical Shop
   sellingPercentage: 80
   maximumBarterDiscount: 80
-  stockConfig: []
+  stockConfig:
+  - item: {fileID: 11400000, guid: 77d73844eeb2b7c4d8572e69c424d6f7, type: 2}
+    initialStock: 12
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 995337421b0aaa6478e39006688360e0, type: 2}
+    initialStock: 15
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 77d73844eeb2b7c4d8572e69c424d6f7, type: 2}
+    initialStock: 15
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 713f61074d64ab84895e4c014189c13e, type: 2}
+    initialStock: 20
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
+  - item: {fileID: 11400000, guid: 8824f193b65c7e34a998405e18e974d3, type: 2}
+    initialStock: 18
+    buyingDiscountPercentage: 0
+    levelToUnlock: 0
 --- !u!4 &7336319063291092959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1138497344972311292, guid: 3ebe0c346dd13d34d97b791d1732394a, type: 3}
