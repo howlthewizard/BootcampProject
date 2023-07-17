@@ -16,8 +16,8 @@ MonoBehaviour:
   displayName: Big Health Potion
   description: An elixir that, when consumed, can significantly increase your vitality.
   icon: {fileID: 21300000, guid: e52ea25af699fd445b7046374f81a5b9, type: 3}
-  pickup: {fileID: 0}
+  pickup: {fileID: 2003498014997721099, guid: 6be6cadcd61085f4c87a74cbf70d1774, type: 3}
   stackable: 1
-  price: 3
+  price: 50
   category: 3
   consumable: 1
