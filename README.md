@@ -25,6 +25,10 @@
 ## Hedef Kitlesi
 10-35 yaş arası oyun oynamayı seven insanlar <br/>
 
+### Jüriye Özel Notlar
+**Not:** Oyunumuzun ticarileştirilme mekaniği için ayrı bir şey yapılmamıştır, steam'de ücretli olarak satılacaktır. <br/>
+**Not2:** Assets linkleri tarafımızdan github repomuzun dosyalar kısmında paylaşılmıştır.
+
 # Sprint 1
 - **Sprint Notları:** Takım olarak proje yönetiminde Miro kullanımı kararlaştırılmıştır. User Story'ler ve görevler product backlog'ların içine yazılmıştır.
 
